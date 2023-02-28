@@ -28,9 +28,9 @@ html,
 body {
     height: 100%;
     width: 100%;
-    font-size: 100%;
     line-height: 1;
     font-size: 14px;
+    font-family: "Rubik";
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -70,10 +70,16 @@ h4,
 h5,
 h6 {
     font-size: inherit;
-    font-weight: inherit;
+    font-weight: 700;
+}
+h1 {
+    font-size: 36px;
+    line-height: 43px;
+    color: #353535;
 }
 .container {
-    max-width: 1320px;
+    max-width: 1146px;
+    width: 100%;
     margin: 0 auto;
 }
 .wrapper {
