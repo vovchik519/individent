@@ -13,7 +13,6 @@ var swiper = new Swiper(".firstscreen__swiper", {
         prevEl: ".swiper-button-prev",
     },
     slidesPerView: 'auto',
-    loop: true,
     autoplay: {
         delay: 5000,
         disableOnInteraction: false,
@@ -33,3 +32,6 @@ window.onscroll = function () {
     }
     prevScrollpos = currentScrollPos;
 }
+
+var headerHeight = document.getElementsByTagName("header")[0].offsetHeight;
+document.getElementsByClassName("firstscreen__wrapper")[0].style.paddingTop = headerHeight + "px";

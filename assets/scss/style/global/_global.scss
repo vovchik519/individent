@@ -31,6 +31,7 @@ body {
     line-height: 1;
     font-size: 14px;
     font-family: "Rubik";
+    overflow-x: hidden;
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -106,8 +107,17 @@ h1 {
     font-size: 14px;
     line-height: 17px;
     color: white;
-    padding: 8px 10px;
+    padding: 8px 9px;
     background-size: 200% 200%;
+}
+.button-1 {
+    font-size: 16px;
+    line-height: 19px;
+    padding: 20px 50px;
+    background: linear-gradient(266.49deg, #8c7cec -17.78%, #090041 117.13%);
+    border-radius: 50px;
+    background-size: 150% 150%;
+
 }
 .button:hover {
     animation: animBtn 2s ease-in-out infinite;
