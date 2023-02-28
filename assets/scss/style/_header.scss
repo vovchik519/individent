@@ -1,8 +1,116 @@
-#address {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    background-color: white;
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: transform 0.4s ease;
+    transform: translateY(0);
+    z-index: 50;
+    padding: 13px 0;
+    // .header__logo
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        width: 129px;
+        height: 86px;
+        margin-right: 7px;
+    }
+
+    // .header__menu
+
+    &__menu {
+        margin: 0 30px;
+    }
+
+    // .header__list
+
+    &__list {
+        display: flex;
+        column-gap: 30px;
+    }
+
+    // .header__item
+
+    &__item {
+        display: inline-flex;
+        box-sizing: border-box;
+        white-space: nowrap;
+        overflow: hidden;
+        a {
+            position: relative;
+            font-size: 14px;
+            line-height: 17px;
+            color: black;
+        }
+        a::before {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            color: #5f51b1;
+            overflow: hidden;
+        }
+        a:hover::before {
+            animation: animText 0.4s linear forwards;
+        }
+        @keyframes animText {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+    }
+
+    // .header__contact
+
+    &__contact {
+        display: flex;
+        column-gap: 20px;
+        margin-right: 60px;
+    }
+    &__icon {
+        font-size: 20px;
+    }
+    // .header__address
+
+    &__address {
+        position: relative;
+    }
+    #address {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        transform: translateY(calc(100% + 10px));
+        background-color: white;
+        width: 178px;
+        padding: 8px 10px;
+        address {
+            font-size: 16px;
+            line-height: 19px;
+            font-style: normal;
+        }
+    }
+
+    // .header__entry
+
+    &__entry {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 16px;
+        a {
+            font-size: 18px;
+            line-height: 21px;
+            color: black;
+        }
+    }
+}
+.header.hide {
+    transform: translateY(-100%);
 }

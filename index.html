@@ -7,50 +7,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Individent - Совершенная улыбка для каждого - Индивидуальный подход к стоматологии</title>
     <link rel="icon" type="image/png" href="./assets/image/favicon.png" />
-    <meta name="description" content="Individent - это стоматологическая компания, которая помогает людям достичь совершенной улыбки и 
-        поддерживать здоровье зубов и полости рта. Наш индивидуальный подход позволяет решать любые проблемы связанные с улучшением внешнего вида зубов
-         и оказывать полный спектр услуг, влияющих не только на улыбку, но и на здоровье. Наша команда профессионалов всегда готова помочь вам достичь
-          желаемых результатов и получить уверенность в своей улыбке.">
+    <meta name="description"
+        content="Individent - это стоматологическая компания, которая помогает людям достичь совершенной улыбки и поддерживать здоровье зубов и полости рта. Наш индивидуальный подход позволяет решать любые проблемы связанные с улучшением внешнего вида зубов и оказывать полный спектр услуг, влияющих не только на улыбку, но и на здоровье. Наша команда профессионалов всегда готова помочь вам достичь желаемых результатов и получить уверенность в своей улыбке.">
     <meta name="keywords"
-        content="Стоматология, Лечение зубов, Лечение кариеса, Профилактика кариеса, Удаление зубов, Установка имплантов, Ортодонтическое лечение,
-         Лечение десен, Реставрация зубов, Эстетическая стоматология, Лечение корневых каналов, Зубные протезы, Безболезненное лечение зубов, Детская стоматология,">
+        content="Стоматология, Лечение зубов, Лечение кариеса, Профилактика кариеса, Удаление зубов, Установка имплантов, Ортодонтическое лечение, Лечение десен, Реставрация зубов, Эстетическая стоматология, Лечение корневых каналов, Зубные протезы, Безболезненное лечение зубов, Детская стоматология,">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 
 <body>
     <div class="wrapper">
         <header class="header">
-            <img src="./assets/image/logo.png" alt="Individent clinic" class="header__logo">
-            <nav class="header__menu">
-                <ul class="header__list">
-                    <li class="header__item"><a href="#!">Услуги взрослым</a></li>
-                    <li class="header__item"><a href="#!">Услуги детям</a></li>
-                    <li class="header__item"><a href="#!">Наши работы</a></li>
-                    <li class="header__item"><a href="#!">Акции</a></li>
-                    <li class="header__item"><a href="#!">Цены</a></li>
-                    <li class="header__item"><a href="#!">Контакты</a></li>
-                </ul>
-            </nav>
-            <div class="header__contact">
-                <div class="header__address">
-                    <button onclick="toggleAddress()" class="icon-mark" aria-label="Наш адресс"></button>
-                    <div id="address" style="display: none;">
-                        <address>г. Алматы, ул. Шагабутдинова 132</address>
+            <div class="container">
+                <div class="header__wrapper">
+                    <a href="#home">
+                        <img src="./assets/image/logo.png" alt="Логотип - Individent clinic" class="header__logo">
+                    </a>
+                    <nav class="header__menu">
+                        <ul class="header__list">
+                            <li class="header__item"><a href="#!" data-text="Услуги взрослым">Услуги взрослым</a></li>
+                            <li class="header__item"><a href="#!" data-text="Услуги детям">Услуги детям</a></li>
+                            <li class="header__item"><a href="#!" data-text="Наши работы">Наши работы</a></li>
+                            <li class="header__item"><a href="#!" data-text="Акции">Акции</a></li>
+                            <li class="header__item"><a href="#!" data-text="Цены">Цены</a></li>
+                            <li class="header__item"><a href="#!" data-text="Контакты">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__contact">
+                        <div class="header__address">
+                            <button type="button" onclick="toggleAddress()" class="header__icon icon-mark"
+                                aria-label="Наш адресс"></button>
+                            <div id="address" style="display: none;">
+                                <address>г. Алматы, ул. Шагабутдинова 132</address>
+                            </div>
+                        </div>
+                        <a href="tel:+77027659788" class="header__icon icon-phone" title="Наш телефон"></a>
+                    </div>
+                    <div class="header__entry">
+                        <a href="tel:+77027659788">+7 702 765 97 88</a>
+                        <button type="button" class="button">Записаться на прием</button>
                     </div>
                 </div>
-                <a href="tel:+77027659788" class="icon-phone" title="Наш телефон"></a>
-            </div>
-            <div class="header__entry">
-                <a href="tel:+77027659788">+7 702 765 97 88</a>
-                <button class="button">Записаться на прием</button>
             </div>
         </header>
-        <main class="main"></main>
+        <main class="main">
+            <section id="home" class="firstscreen">
+                <div class="container">
+                    <div class="firstscreen-info">
+                        <h1>Наша цель - стремление к<br><span>совершенной улыбке</span></h1>
+                        <p>По статистике лишь 40% людей от природы имеют идеальную улыбку. Наша задача помочь вам
+                            достичь
+                            совершенства.</p>
+                        <p>Мы оказываем полный спектр услуг, влияющих не только на улыбку, но и на здоровье.</p>
+                        <button type="button" class="button">Записаться на бесплатную консультацию</button>
+                    </div>
+                    <div class="firstscreen__slider">
+                        <div class="swiper firstscreen__swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="./assets/image/firstscreen/slider-1.png"
+                                        alt="женщина с красивой улыбкой"></div>
+                                <div class="swiper-slide"><img src="./assets/image/firstscreen/slider-1.png"
+                                        alt="женщина с улыбкой"></div>
+                                <div class="swiper-slide"><img src="./assets/image/firstscreen/slider-1.png"
+                                        alt="женщина с улыбкой"></div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
         <div class="footer"></div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./assets/script/script.js"></script>
 </body>
 

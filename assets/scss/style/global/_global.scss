@@ -45,6 +45,7 @@ input::-ms-clear {
 }
 button {
     cursor: pointer;
+    background-color: transparent;
 }
 button::-moz-focus-inner {
     padding: 0;
@@ -95,4 +96,30 @@ h1 {
 }
 .footer {
     flex: 0 0 auto;
+}
+.button {
+    background: linear-gradient(266.49deg, #8c7cec -17.78%, #090041 117.13%);
+    border-radius: 30px;
+    box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.25);
+    filter: drop-shadow(0px 0px 10px #8c7cec);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: white;
+    padding: 8px 10px;
+    background-size: 200% 200%;
+}
+.button:hover {
+    animation: animBtn 2s ease-in-out infinite;
+}
+@keyframes animBtn {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
