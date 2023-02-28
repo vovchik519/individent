@@ -5,7 +5,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>Individent - Совершенная улыбка для каждого - Индивидуальный подход к стоматологии</title>
+    <link rel="icon" type="image/png" href="./assets/image/favicon.png" />
+    <meta name="description" content="Individent - это стоматологическая компания, которая помогает людям достичь совершенной улыбки и 
+        поддерживать здоровье зубов и полости рта. Наш индивидуальный подход позволяет решать любые проблемы связанные с улучшением внешнего вида зубов
+         и оказывать полный спектр услуг, влияющих не только на улыбку, но и на здоровье. Наша команда профессионалов всегда готова помочь вам достичь
+          желаемых результатов и получить уверенность в своей улыбке.">
+    <meta name="keywords"
+        content="Стоматология, Лечение зубов, Лечение кариеса, Профилактика кариеса, Удаление зубов, Установка имплантов, Ортодонтическое лечение,
+         Лечение десен, Реставрация зубов, Эстетическая стоматология, Лечение корневых каналов, Зубные протезы, Безболезненное лечение зубов, Детская стоматология,">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -15,11 +23,35 @@
 <body>
     <div class="wrapper">
         <header class="header">
+            <img src="./assets/image/logo.png" alt="Individent clinic" class="header__logo">
+            <nav class="header__menu">
+                <ul class="header__list">
+                    <li class="header__item"><a href="#!">Услуги взрослым</a></li>
+                    <li class="header__item"><a href="#!">Услуги детям</a></li>
+                    <li class="header__item"><a href="#!">Наши работы</a></li>
+                    <li class="header__item"><a href="#!">Акции</a></li>
+                    <li class="header__item"><a href="#!">Цены</a></li>
+                    <li class="header__item"><a href="#!">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__contact">
+                <div class="header__address">
+                    <button onclick="toggleAddress()" class="icon-mark" aria-label="Наш адресс"></button>
+                    <div id="address" style="display: none;">
+                        <address>г. Алматы, ул. Шагабутдинова 132</address>
+                    </div>
+                </div>
+                <a href="tel:+77027659788" class="icon-phone" title="Наш телефон"></a>
+            </div>
+            <div class="header__entry">
+                <a href="tel:+77027659788">+7 702 765 97 88</a>
+                <button class="button">Записаться на прием</button>
+            </div>
         </header>
         <main class="main"></main>
         <div class="footer"></div>
     </div>
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/script/script.js"></script>
 </body>
 
 </html>
