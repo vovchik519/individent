@@ -13,6 +13,11 @@
         justify-content: space-between;
         align-items: center;
     }
+    &__right {
+        display: flex;
+        align-items: center;
+        column-gap: 60px;
+    }
     &__logo {
         width: 129px;
         height: 86px;
@@ -72,7 +77,6 @@
     &__contact {
         display: flex;
         column-gap: 20px;
-        margin-right: 60px;
     }
     &__icon {
         font-size: 20px;
@@ -96,11 +100,11 @@
         font-style: normal;
         flex-direction: column;
         row-gap: 5px;
-        a{
+        a {
             color: black;
         }
     }
-    #phone{
+    #phone {
         text-align: center;
     }
     // .header__entry
@@ -119,7 +123,157 @@
             width: 168px;
         }
     }
+    .menu-burger {
+        display: none;
+    }
 }
 .header.hide {
     transform: translateY(-100%);
+}
+@media (max-width: 768px) {
+    body.lock {
+        overflow: hidden;
+        .header__logo,
+        .header__contact,
+        .main,
+        .footer {
+            filter: blur(5px);
+        }
+    }
+    .header {
+        padding: 2.778vw 0;
+        &__menu {
+            display: none;
+        }
+        &__menu.active {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            row-gap: 7vw;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            padding: 7vw;
+            overflow-y: auto;
+            overflow-x: hidden;
+            background-color: rgba(234, 234, 234, 0.375);
+            transition: 0.3s;
+            z-index: 70;
+        }
+        &__logo {
+            width: 25vw;
+            height: auto;
+            margin-right: 0;
+        }
+        &__list {
+            width: 100%;
+            flex-direction: column;
+            row-gap: 5vw;
+            align-items: center;
+        }
+        &__item {
+            a {
+                font-size: 8vw;
+                line-height: 1.3em;
+            }
+        }
+        &__right {
+            column-gap: 7vw;
+        }
+        &__contact {
+            column-gap: 5vw;
+            margin-right: 0;
+            margin-top: 1vw;
+        }
+        &__icon {
+            font-size: 6vw;
+        }
+        &__address,
+        &__phone {
+            position: static;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        &__popup {
+            position: absolute;
+            right: 5vw;
+            bottom: 5vw;
+            transform: translateY(calc(100% + 2vw));
+            background-color: white;
+            width: 70vw;
+            padding: 3vw 5vw;
+            font-size: 4.444vw;
+            line-height: 5.278vw;
+            font-style: normal;
+            flex-direction: column;
+            row-gap: 1.389vw;
+            a {
+                color: black;
+            }
+        }
+        &__entry {
+            display: none;
+        }
+        .menu__burger {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            padding: 0;
+            z-index: 100;
+            svg {
+                width: 12vw;
+                height: 12vw;
+            }
+        }
+        .menu__burger.opened {
+            position: absolute;
+            top: 5vw;
+            right: 5vw;
+        }
+        .line {
+            fill: none;
+            stroke: #5f51b1;
+            stroke-width: 6;
+            transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+                stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .line1 {
+            stroke-dasharray: 60 207;
+            stroke-width: 6;
+        }
+        .line2 {
+            stroke-dasharray: 60 60;
+            stroke-width: 6;
+        }
+        .line3 {
+            stroke-dasharray: 60 207;
+            stroke-width: 6;
+        }
+        .opened .line1 {
+            stroke-dasharray: 90 207;
+            stroke-dashoffset: -134;
+            stroke-width: 6;
+        }
+        .opened .line2 {
+            stroke-dasharray: 1 60;
+            stroke-dashoffset: -30;
+            stroke-width: 6;
+        }
+        .opened .line3 {
+            stroke-dasharray: 90 207;
+            stroke-dashoffset: -134;
+            stroke-width: 6;
+        }
+    }
+    .header.active {
+        padding: 0;
+        .container {
+            padding: 0;
+        }
+    }
 }
