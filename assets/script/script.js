@@ -1,3 +1,9 @@
+// padding первого блока от хедера
+
+var headerHeight = document.getElementsByTagName("header")[0].offsetHeight;
+document.getElementsByClassName("firstscreen__wrapper")[0].style.paddingTop = headerHeight + "px";
+
+
 // всплывающий аддресс и телефон
 function toggleAddress() {
     var address = document.getElementById("address");
@@ -41,7 +47,6 @@ var swiperImage = new Swiper(".firstscreen__swiper-image", {
     },
 });
 
-
 // скрывающийся header
 
 var header = document.getElementsByTagName("header")[0];
@@ -57,8 +62,3 @@ window.onscroll = function () {
     }
     prevScrollpos = currentScrollPos;
 }
-
-// padding первого блока от хедера
-
-var headerHeight = document.getElementsByTagName("header")[0].offsetHeight;
-document.getElementsByClassName("firstscreen__wrapper")[0].style.paddingTop = headerHeight + "px";
