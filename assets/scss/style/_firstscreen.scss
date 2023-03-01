@@ -17,7 +17,6 @@
     // .firstscreen__info
 
     &__info {
-        margin-top: 45px;
         z-index: 1;
         h1 {
             margin-bottom: 25px;
@@ -55,24 +54,22 @@
             margin-top: 5px;
         }
     }
+    &__swiper-info{
+        margin-top: 45px;
+        width: 640px;
+        height: auto;
+    }
     &__slider {
         position: relative;
         z-index: 1;
     }
-    .swiper {
-        width: 485px;
+    &__swiper-image {
+        width: 475px;
         height: 100%;
     }
     .swiper::selection {
         color: none;
         background: none;
-    }
-    .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
     .swiper-slide img::selection {
         color: none;

@@ -24,7 +24,8 @@
             <div class="container">
                 <div class="header__wrapper">
                     <a href="#home">
-                        <img src="./assets/image/logo.png" alt="Логотип - Individent clinic" class="header__logo" loading="eager">
+                        <img src="./assets/image/logo.png" alt="Логотип - Individent clinic" class="header__logo"
+                            loading="eager">
                     </a>
                     <nav class="header__menu">
                         <ul class="header__list">
@@ -40,11 +41,21 @@
                         <div class="header__address">
                             <button type="button" onclick="toggleAddress()" class="header__icon icon-mark"
                                 aria-label="Наш адресс"></button>
-                            <div id="address" style="display: none;">
-                                <address>г. Алматы, ул. Шагабутдинова 132</address>
+                            <address class="header__popup" id="address" style="display:none;">
+                                <p>г. Алматы, ул. Шагабутдинова 132</p>
+                                <p>г. Алматы, ул. Шагабутдинова 132</p>
+                                <p>г. Алматы, ул. Шагабутдинова 132</p>
+                            </address>
+                        </div>
+                        <div class="header__phone">
+                            <button type="button" onclick="togglePhone()" class="header__icon icon-phone"
+                                aria-label="Наш адресс"></button>
+                            <div class="header__popup" id="phone" style="display:none;">
+                                <a href="tel:+77027659788" title="Наш телефон">+7 702 765 97 88</a>
+                                <a href="tel:+77027659788" title="Наш телефон">+7 702 765 97 88</a>
+                                <a href="tel:+77027659788" title="Наш телефон">+7 702 765 97 88</a>
                             </div>
                         </div>
-                        <a href="tel:+77027659788" class="header__icon icon-phone" title="Наш телефон"></a>
                     </div>
                     <div class="header__entry">
                         <a href="tel:+77027659788">+7 702 765 97 88</a>
@@ -58,22 +69,52 @@
                 <div class="container">
                     <div class="firstscreen__wrapper">
                         <div class="firstscreen__info">
-                            <h1>Наша цель - стремление к<br><span data-text="совершенной улыбке">совершенной улыбке</span></h1>
-                            <p>По статистике лишь 40% людей от природы имеют идеальную улыбку. Наша задача помочь вам
-                                достичь
-                                совершенства.</p>
-                            <p>Мы оказываем полный спектр услуг, влияющих не только на улыбку, но и на здоровье.</p>
+                            <div class="swiper firstscreen__swiper-info">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <h1>Наша цель - стремление к<br><span data-text="совершенной улыбке">совершенной
+                                                улыбке</span></h1>
+                                        <p>По статистике лишь 40% людей от природы имеют идеальную улыбку. Наша задача
+                                            помочь вам
+                                            достичь
+                                            совершенства.</p>
+                                        <p>Мы оказываем полный спектр услуг, влияющих не только на улыбку, но и на
+                                            здоровье.</p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <h1>Наша цель - стремление к<br><span data-text="совершенной улыбке">совершенной
+                                                улыбке</span></h1>
+                                        <p>По статистике лишь 40% людей от природы имеют идеальную улыбку. Наша задача
+                                            помочь вам
+                                            достичь
+                                            совершенства.</p>
+                                        <p>Мы оказываем полный спектр услуг, влияющих не только на улыбку, но и на
+                                            здоровье.</p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <h1>Наша цель - стремление к<br><span data-text="совершенной улыбке">совершенной
+                                                улыбке</span></h1>
+                                        <p>По статистике лишь 40% людей от природы имеют идеальную улыбку. Наша задача
+                                            помочь вам
+                                            достичь
+                                            совершенства.</p>
+                                        <p>Мы оказываем полный спектр услуг, влияющих не только на улыбку, но и на
+                                            здоровье.</p>
+                                    </div>
+                                </div>
+                            </div>
                             <button type="button" class="button button-1">Записаться на бесплатную консультацию</button>
                         </div>
                         <div class="firstscreen__slider">
-                            <div class="swiper firstscreen__swiper">
+                            <div class="swiper firstscreen__swiper-image">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide"><img src="./assets/image/firstscreen/slider-1.png"
                                             alt="женщина с красивой улыбкой" loading="lazy"></div>
                                     <div class="swiper-slide"><img src="./assets/image/firstscreen/slider-1.png"
                                             alt="девушка смотрит в сторону улыбаясь" loading="lazy"></div>
                                     <div class="swiper-slide"><img src="./assets/image/firstscreen/slider-1.png"
-                                            alt="девушка в желтой одежде улыбается смотря в сторону" loading="lazy"></div>
+                                            alt="девушка в желтой одежде улыбается смотря в сторону" loading="lazy">
+                                    </div>
                                 </div>
                             </div>
                             <div class="swiper-button-next" aria-label="Слайдер далее"></div>

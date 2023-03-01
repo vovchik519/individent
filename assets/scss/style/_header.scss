@@ -79,10 +79,11 @@
     }
     // .header__address
 
+    &__phone,
     &__address {
         position: relative;
     }
-    #address {
+    &__popup {
         position: absolute;
         right: 0;
         bottom: 0;
@@ -90,13 +91,18 @@
         background-color: white;
         width: 178px;
         padding: 8px 10px;
-        address {
-            font-size: 16px;
-            line-height: 19px;
-            font-style: normal;
+        font-size: 16px;
+        line-height: 19px;
+        font-style: normal;
+        flex-direction: column;
+        row-gap: 5px;
+        a{
+            color: black;
         }
     }
-
+    #phone{
+        text-align: center;
+    }
     // .header__entry
 
     &__entry {
@@ -109,7 +115,7 @@
             line-height: 21px;
             color: black;
         }
-        .button{
+        .button {
             width: 168px;
         }
     }
