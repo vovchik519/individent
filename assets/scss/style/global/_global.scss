@@ -31,7 +31,6 @@ body {
     line-height: 1;
     font-size: 14px;
     font-family: "Rubik";
-    overflow-x: hidden;
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -95,6 +94,7 @@ h1 {
 }
 .main {
     flex: 1 0 auto;
+    overflow: hidden;
 }
 .footer {
     flex: 0 0 auto;

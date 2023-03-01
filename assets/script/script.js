@@ -5,9 +5,11 @@ document.getElementsByClassName("firstscreen__wrapper")[0].style.paddingTop = he
 
 
 // всплывающий аддресс и телефон
+
+var address = document.getElementById("address");
+var phone = document.getElementById("phone");
+
 function toggleAddress() {
-    var address = document.getElementById("address");
-    var phone = document.getElementById("phone");
     if (address.style.display === "none") {
         address.style.display = "flex";
         phone.style.display = "none";
@@ -17,8 +19,6 @@ function toggleAddress() {
 }
 
 function togglePhone() {
-    var address = document.getElementById("address");
-    var phone = document.getElementById("phone");
     if (phone.style.display === "none") {
         phone.style.display = "flex";
         address.style.display = "none";
@@ -57,10 +57,19 @@ window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos || currentScrollPos <= headerHeight) {
         header.classList.remove("hide");
+        header.classList.remove("bg"); // добавлено
     } else {
         header.classList.add("hide");
+        header.classList.add("bg");
+        phone.style.display = "none";
+        address.style.display = "none";
     }
     prevScrollpos = currentScrollPos;
+    if (currentScrollPos > headerHeight) { // добавлено
+        header.classList.add("bg");
+    } else {
+        header.classList.remove("bg");
+    }
 }
 
 let bodyOverflow = document.querySelector('body');
