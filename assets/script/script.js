@@ -85,9 +85,9 @@ menuBtn.addEventListener('click', function () {
     menuBtn.setAttribute('aria-expanded', isExpanded);
 })
 
-let headerItems = document.querySelectorAll('.header__item');
+let closeMenu = document.querySelectorAll('.close-menu');
 
-headerItems.forEach(function (item) {
+closeMenu.forEach(function (item) {
     item.addEventListener('click', function () {
         // Remove the active classes and body lock class
         menuBtn.classList.remove('opened');
