@@ -5,7 +5,8 @@
     background-size: 100% 100%;
     display: flex;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     padding: 112px 0 0 0;
     // .firstscreen__wrapper
 
@@ -20,6 +21,7 @@
 
     &__info {
         z-index: 1;
+        padding-bottom: 20px;
         h1 {
             margin-bottom: 25px;
             transform: translateX(100%);
