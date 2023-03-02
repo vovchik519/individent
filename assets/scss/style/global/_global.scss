@@ -18,6 +18,10 @@ a:focus,
 a:active {
     outline: none;
 }
+p {
+    font-size: 16px;
+    line-height: 19px;
+}
 nav,
 footer,
 header,
@@ -28,8 +32,7 @@ html,
 body {
     height: 100%;
     width: 100%;
-    line-height: 1;
-    font-size: 14px;
+    font-size: 16px;
     font-family: "Rubik";
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
@@ -78,6 +81,14 @@ h1 {
     line-height: 43px;
     color: #353535;
 }
+h2 {
+    font-size: 32px;
+    line-height: 38px;
+}
+h3 {
+    font-size: 20px;
+    line-height: 24px;
+}
 .container {
     max-width: 1186px;
     padding: 0 20px;
@@ -99,6 +110,7 @@ h1 {
     flex: 0 0 auto;
 }
 .button {
+    display: block;
     box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.25);
     filter: drop-shadow(0px 0px 10px #8c7cec);
     color: white;
@@ -111,6 +123,31 @@ h1 {
 }
 .button:hover {
     animation: animBtn 2s ease-in-out infinite;
+}
+.text-fill {
+    position: relative;
+    white-space: nowrap;
+    margin-right: 5px;
+}
+.text-fill::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    color: #5f51b1;
+    overflow: hidden;
+}
+.text-fill.active::before {
+    animation: animText 1.3s linear forwards 0.3s;
+}
+@keyframes animText {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
 }
 @keyframes animBtn {
     0% {

@@ -187,7 +187,7 @@
         padding: 1vw 0;
         &__menu {
             height: 0;
-                transform: scale(0) translateY(-100%);
+            transform: scale(0) translateY(-100%);
         }
         &__menu.active {
             position: absolute;
@@ -204,26 +204,26 @@
             background-color: rgba(234, 234, 234, 0.375);
             transition: 0.3s;
             z-index: 70;
-            animation: animMenu .7s ease-in-out forwards;
+            animation: animMenu 0.7s ease-in-out forwards;
         }
-        @keyframes animMenu{
-            0%{
+        @keyframes animMenu {
+            0% {
                 transform: scale(0) translateY(-100%);
                 height: 0;
             }
-            1%{
+            1% {
                 transform: scale(1) translateY(-100%);
                 height: 100%;
             }
-            50%{
+            50% {
                 transform: scale(1) translateY(3%);
                 height: 100%;
             }
-            75%{
+            75% {
                 transform: scale(1) translateY(-2%);
                 height: 100%;
             }
-            100%{
+            100% {
                 transform: scale(1) translateY(0);
                 height: 100%;
             }

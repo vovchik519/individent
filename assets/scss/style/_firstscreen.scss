@@ -24,28 +24,6 @@
             margin-bottom: 25px;
             transform: translateX(100%);
             opacity: 0;
-            span {
-                position: relative;
-                white-space: nowrap;
-            }
-            span::before {
-                content: attr(data-text);
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 0;
-                color: #5f51b1;
-                animation: animText 1.7s ease-in-out forwards;
-                overflow: hidden;
-            }
-            @keyframes animText {
-                0% {
-                    width: 0;
-                }
-                100% {
-                    width: 100%;
-                }
-            }
         }
         p {
             font-weight: 500;

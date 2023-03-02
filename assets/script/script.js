@@ -55,24 +55,30 @@ var header = document.getElementsByTagName("header")[0];
 var headerHeight = header.offsetHeight;
 var prevScrollpos = window.pageYOffset;
 
+function updateHeaderClass() {
+    if (prevScrollpos <= headerHeight) {
+        header.classList.remove("bg");
+    } else {
+        header.classList.add("bg");
+    }
+}
+
+window.addEventListener("load", function () {
+    updateHeaderClass();
+});
+
 window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos || currentScrollPos <= headerHeight) {
         header.classList.remove("hide");
-        header.classList.remove("bg"); // добавлено
     } else {
         header.classList.add("hide");
-        header.classList.add("bg");
         phone.style.display = "none";
         address.style.display = "none";
     }
     prevScrollpos = currentScrollPos;
-    if (currentScrollPos > headerHeight) { // добавлено
-        header.classList.add("bg");
-    } else {
-        header.classList.remove("bg");
-    }
-}
+    updateHeaderClass();
+};
 
 let bodyOverflow = document.querySelector('body');
 let menuBtn = document.querySelector('.menu__burger');
@@ -114,3 +120,15 @@ function openTab(evt, tabId) {
     document.getElementById(tabId).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
+const elements = document.querySelectorAll('.text-fill');
+elements.forEach(element => {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            }
+        });
+    });
+    observer.observe(element);
+});
