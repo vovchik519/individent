@@ -121,6 +121,17 @@
         }
         .button {
             width: 175px;
+            background: linear-gradient(
+                266.49deg,
+                #8c7cec -17.78%,
+                #090041 117.13%
+            );
+            border-radius: 30px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            padding: 8px 9px;
+            background-size: 200% 200%;
         }
     }
     .menu-burger {

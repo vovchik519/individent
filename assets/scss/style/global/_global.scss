@@ -94,31 +94,20 @@ h1 {
 }
 .main {
     flex: 1 0 auto;
-    overflow: hidden;
 }
 .footer {
     flex: 0 0 auto;
 }
 .button {
-    background: linear-gradient(266.49deg, #8c7cec -17.78%, #090041 117.13%);
-    border-radius: 30px;
     box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.25);
     filter: drop-shadow(0px 0px 10px #8c7cec);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
     color: white;
-    padding: 8px 9px;
-    background-size: 200% 200%;
-}
-.button-1 {
     font-size: 16px;
     line-height: 19px;
     padding: 20px 50px;
     background: linear-gradient(266.49deg, #8c7cec -17.78%, #090041 117.13%);
     border-radius: 50px;
     background-size: 150% 150%;
-
 }
 .button:hover {
     animation: animBtn 2s ease-in-out infinite;
@@ -132,5 +121,15 @@ h1 {
     }
     100% {
         background-position: 0% 50%;
+    }
+}
+@media (max-width: 769px) {
+    .button {
+        box-shadow: inset 0px 0px 1.389vw rgba(255, 255, 255, 0.25);
+        filter: drop-shadow(0px 0px 2.778vw #8c7cec);
+        font-size: 3.7vw;
+        line-height: 1.3em;
+        padding: 5vw 2vw;
+        border-radius: 13.889vw;
     }
 }

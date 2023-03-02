@@ -5,7 +5,9 @@
     background-size: 100% 100%;
     display: flex;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
+    padding: 112px 0 0 0;
     // .firstscreen__wrapper
 
     &__wrapper {
@@ -13,7 +15,6 @@
         column-gap: 30px;
         height: 100%;
         max-height: 700px;
-        padding-top: 112px;
         justify-content: space-between;
     }
     // .firstscreen__info
@@ -170,4 +171,140 @@
     background-image: url(./../image/firstscreen/tools.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+@media (max-width: 1200px) {
+    .firstscreen {
+        &__info {
+            width: 50vw;
+            h1,
+            p {
+                width: 50vw;
+            }
+        }
+        &__swiper-info {
+            max-width: 640px;
+            width: 100%;
+            margin-top: 7vw;
+        }
+        &__swiper-image {
+            max-width: 40vw;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+@media (max-width: 1025px) {
+    .firstscreen {
+        &__info {
+            max-width: none;
+            width: 55vw;
+            h1,
+            p {
+                width: 100%;
+            }
+        }
+        &__swiper-info {
+            max-width: 100%;
+            width: 100%;
+            margin-top: 3vw;
+        }
+        &__swiper-image {
+            height: auto;
+        }
+        &__slider {
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        &__info .button {
+            width: 100%;
+        }
+        .swiper-button-next,
+        .swiper-button-prev {
+            bottom: 25px;
+            left: auto;
+            right: 0;
+        }
+        .swiper-button-next {
+            left: auto;
+            right: -47px;
+        }
+    }
+}
+@media (max-width: 769px) {
+    .firstscreen {
+        padding-top: 18.056vw;
+        &__wrapper {
+            column-gap: 0;
+            row-gap: 8.333vw;
+            height: 100%;
+            max-height: none;
+            padding-top: 5vw;
+            flex-direction: column;
+        }
+        &__info {
+            max-width: none;
+            width: 100%;
+            h1,
+            p {
+                width: 100%;
+            }
+            h1 {
+                font-size: 7.3vw;
+                line-height: 1.23em;
+                margin-bottom: 25px;
+                transform: translateX(100%);
+                span {
+                    font-size: inherit;
+                    line-height: inherit;
+                }
+            }
+            p {
+                font-size: 5.556vw;
+                font-weight: 400;
+                line-height: 6.667vw;
+                margin-bottom: 6.944vw;
+                transform: translateX(100%);
+            }
+            .button {
+                width: 100%;
+                margin-top: 1.389vw;
+            }
+        }
+        &__swiper-info {
+            max-width: 100%;
+            width: 100%;
+            margin-top: 0;
+        }
+        &__slider {
+            width: 100%;
+        }
+        &__swiper-image {
+            max-width: none;
+            width: 100%;
+            height: auto;
+        }
+        .swiper-button-next,
+        .swiper-button-prev {
+            bottom: 5vw;
+            right: auto;
+            left: 50%;
+            transform: translateX(calc(-50% - 7.5vw));
+            width: 11.111vw;
+            height: 11.111vw;
+            opacity: 1 !important;
+        }
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+            font-size: 7vw;
+        }
+        .swiper-button-next {
+            right: auto;
+            left: calc(15.111vw + 50%);
+        }
+    }
+    .firstscreen::before {
+        content: "";
+        display: none;
+    }
 }
