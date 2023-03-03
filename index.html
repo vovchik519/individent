@@ -26,10 +26,10 @@
                     </a>
                     <nav class="header__menu">
                         <ul class="header__list">
-                            <li class="header__item close-menu"><a href="#!" data-text="Услуги взрослым">Услуги
+                            <li class="header__item close-menu header__item-abult"><a href="#services" data-text="Услуги взрослым">Услуги
                                     взрослым</a>
                             </li>
-                            <li class="header__item close-menu"><a href="#!" data-text="Услуги детям">Услуги детям</a>
+                            <li class="header__item close-menu header__item-small"><a href="#services" data-text="Услуги детям">Услуги детям</a>
                             </li>
                             <li class="header__item close-menu"><a href="#!" data-text="Наши работы">Наши работы</a>
                             </li>
@@ -136,8 +136,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-button-next" aria-label="Слайдер далее"></div>
-                            <div class="swiper-button-prev" arial-label="Слайдер назад"></div>
+                            <button class="swiper-button-next" aria-label="Слайдер далее"></button>
+                            <button class="swiper-button-prev" aria-label="Слайдер назад"></button>
                         </div>
                     </div>
                 </div>
@@ -195,9 +195,9 @@
                             </ul>
                             <div class="steps__image">
                                 <img src="./assets/image/steps/image-1.jpg" alt="аппарат для снимка ренгена зубов"
-                                    width="560px" height="396px">
+                                    width="560" height="396">
                                 <img src="./assets/image/steps/image-2.jpg" alt="приятный персонал" width="560"
-                                    height="302px">
+                                    height="302">
                             </div>
                         </div>
                     </div>
@@ -254,15 +254,15 @@
                         </div>
                     </div>
                 </section>
-                <section class="services">
+                <section id="services" class="services">
                     <div class="container">
                         <div class="services__wrapper">
                             <h2><span class="text-fill" data-text="Услуги">Услуги</span>нашей стоматологии</h2>
                             <div class="services__tabs-wrapper">
                                 <div class="services__tabs-btn">
-                                    <button type="button" class="services__tabs-links active"
+                                    <button type="button" class="services__tabs-links service__tabs-links-abult active"
                                         onclick="openTab(event, 'abult')">Услуги взрослым</button>
-                                    <button type="button" class="services__tabs-links"
+                                    <button type="button" class="services__tabs-links service__tabs-links-small"
                                         onclick="openTab(event, 'small')">Услуги
                                         детям</button>
                                 </div>

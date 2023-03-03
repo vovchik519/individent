@@ -1,10 +1,13 @@
-// padding первого блока от хедера
+document.addEventListener('DOMContentLoaded', function () {
+    const setPaddingTop = () => {
+        const headerHeight = document.querySelector("header").clientHeight;
+        document.querySelector(".firstscreen").style.paddingTop = `${headerHeight}px`;
+    };
 
-var headerHeight = document.getElementsByTagName("header")[0].offsetHeight;
-document.getElementsByClassName("firstscreen")[0].style.paddingTop = headerHeight + "px";
+    setPaddingTop();
 
-
-// всплывающий аддресс и телефон
+    window.addEventListener('resize', setPaddingTop);
+});
 
 var address = document.getElementById("address");
 var phone = document.getElementById("phone");
@@ -16,7 +19,7 @@ function toggleAddress() {
     } else {
         address.style.display = "none";
     }
-}
+};
 
 function togglePhone() {
     if (phone.style.display === "none") {
@@ -25,9 +28,8 @@ function togglePhone() {
     } else {
         phone.style.display = "none";
     }
-}
+};
 
-// слайдер
 var swiperInfo = new Swiper(".firstscreen__swiper-info", {
     allowTouchMove: false,
     spaceBetween: 30,
@@ -49,8 +51,6 @@ var swiperImage = new Swiper(".firstscreen__swiper-image", {
     },
 });
 
-// скрывающийся header
-
 var header = document.getElementsByTagName("header")[0];
 var headerHeight = header.offsetHeight;
 var prevScrollpos = window.pageYOffset;
@@ -61,7 +61,7 @@ function updateHeaderClass() {
     } else {
         header.classList.add("bg");
     }
-}
+};
 
 window.addEventListener("load", function () {
     updateHeaderClass();
@@ -89,7 +89,7 @@ menuBtn.addEventListener('click', function () {
     bodyOverflow.classList.toggle('lock');
     let isExpanded = menuBtn.classList.contains('opened');
     menuBtn.setAttribute('aria-expanded', isExpanded);
-})
+});
 
 let closeMenu = document.querySelectorAll('.close-menu');
 
@@ -119,7 +119,21 @@ function openTab(evt, tabId) {
 
     document.getElementById(tabId).style.display = "block";
     evt.currentTarget.className += " active";
-}
+};
+let headerItemSmall = document.querySelector('.header__item-small');
+let headerItemAbult = document.querySelector('.header__item-abult');
+let tabLinksSmall = document.querySelector('.service__tabs-links-small');
+let tabLinksAbult = document.querySelector('.service__tabs-links-abult');
+headerItemSmall.addEventListener('click', function (evt) {
+    openTab(evt, 'small');
+    tabLinksSmall.classList.add('active');
+    tabLinksAbult.classList.remove('active');
+});
+headerItemAbult.addEventListener('click', function (evt) {
+    openTab(evt, 'abult');
+    tabLinksAbult.classList.add('active');
+    tabLinksSmall.classList.remove('active');
+});
 
 const elements = document.querySelectorAll('.text-fill');
 elements.forEach(element => {
