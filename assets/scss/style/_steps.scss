@@ -1,5 +1,10 @@
 .steps {
     padding: 105px 0 72px;
+    h2{
+        position: absolute;
+        visibility: hidden;
+        z-index: -1;
+    }
     
     // .steps__wrapper
     
