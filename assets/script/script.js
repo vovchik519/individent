@@ -137,6 +137,6 @@ window.addEventListener('scroll', function () {
     const parallaxItems = document.querySelectorAll('.icons__item');
     let scrollPosition = window.pageYOffset;
     parallaxItems.forEach(function (parallax) {
-        parallax.style.transform = 'translateY(' + scrollPosition * 0.1 + 'px)';
+        parallax.style.transform = 'translateY(' + scrollPosition * 0.2 + 'px)';
     });
 });
