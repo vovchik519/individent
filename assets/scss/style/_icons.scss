@@ -1,0 +1,102 @@
+.icons__wrapper {
+    position: relative;
+    overflow: hidden;
+}
+.icons__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+}
+.icons__item:nth-child(1) {
+    left: 0.764vw;
+    top: 808.58px - 643px;
+    img{
+        transform: rotate(-20.58deg);
+    }
+}
+.icons__item:nth-child(2) {
+    left: 42.222vw;
+    top: 1062.27px - 643px;
+    img{
+        transform: rotate(-80.19deg);
+    }
+}
+.icons__item:nth-child(3) {
+    left: 94.15vw;
+    top: 867px - 643px;
+    img{
+        transform: rotate(28.37deg);
+    }
+}
+.icons__item:nth-child(4) {
+    left: 4.903vw;
+    top: 1193px - 643px;
+    img{
+        transform: rotate(29.48deg);
+    }
+}
+.icons__item:nth-child(5) {
+    left: 4.514vw;
+    top: 1643.27px - 643px;
+    img{
+        transform: rotate(-80.19deg);
+    }
+}
+.icons__item:nth-child(6) {
+    left: 94.341vw;
+    top: 1575.19px - 643px;
+    img{
+        transform: rotate(29.1deg);
+    }
+}
+.icons__item:nth-child(7) {
+    left: 2.639vw;
+    top: 1948.34px - 643px;
+    img{
+        transform: rotate(-31.79deg);
+    }
+}
+.icons__item:nth-child(8) {
+    left: 52.761vw;
+    top: 2181px - 643px;
+    img{
+        transform: rotate(28.37deg);
+    }
+}
+.icons__item:nth-child(9) {
+    left: 94.972vw;
+    top: 2068px - 643px;
+    img{
+        transform: rotate(29.48deg);
+    }
+}
+.icons__item:nth-child(10) {
+    left: 2.778vw;
+    top: 2589.94px - 643px;
+    img{
+        transform: rotate(-21.02deg);
+    }
+}
+.icons__item:nth-child(11) {
+    left: 91.779vw;
+    top: 2703px - 643px;
+    img{
+        transform: rotate(1.86deg);
+    }
+}
+.icons__item:nth-child(12) {
+    left: 4.486vw;
+    top: 2914px - 643px;
+    img{
+        transform: rotate(29.48deg);
+    }
+}
+.icons__item:nth-child(13) {
+    left: 95.161vw;
+    top: 3091px - 643px;
+    img{
+        transform: rotate(29.1deg);
+    }
+}

@@ -1,9 +1,10 @@
 .steps {
     padding: 105px 0 72px;
-
+    
     // .steps__wrapper
-
+    
     &__wrapper {
+        position: relative;
         display: flex;
         column-gap: 70px;
     }

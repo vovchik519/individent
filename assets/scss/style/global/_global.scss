@@ -64,7 +64,9 @@ ul li {
 img {
     vertical-align: top;
 }
-a,p,li{
+a,
+p,
+li {
     line-height: 1.2em;
 }
 h1,
@@ -103,6 +105,13 @@ h3 {
 }
 .main {
     flex: 1 0 auto;
+    background: rgb(233, 250, 255);
+    background: linear-gradient(
+        180deg,
+        rgba(233, 250, 255, 1) 0%,
+        rgba(251, 254, 254, 1) 60%,
+        rgba(233, 250, 255, 1) 100%
+    );
 }
 .footer {
     flex: 0 0 auto;
