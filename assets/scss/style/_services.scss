@@ -1,5 +1,5 @@
 .services {
-    margin: 15px 0 135px;
+    padding: 15px 0 135px;
     // .services__wrapper
 
     &__wrapper {
@@ -65,6 +65,7 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         gap: 40px 38.5px;
     }
 
@@ -93,8 +94,77 @@
         h3 {
             font-weight: 500;
             font-size: 16px;
-            line-height: 19px;
             margin-left: 17px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .services {
+        padding: 2.778vw 0 13.889vw;
+        .text-fill::before {
+            animation-duration: 0.4s;
+        }
+        &__tabs-wrapper {
+            margin-top: 20vw;
+        }
+
+        // .services__tabs-btn
+
+        &__tabs-btn {
+            column-gap: 5vw;
+            justify-content: space-between;
+            width: 74vw;
+            left: 8.333vw;
+            transform: translateY(calc(-100% + 1.389vw));
+        }
+
+        // .services__tabs-links
+
+        &__tabs-links {
+            width: 35vw;
+            height: 15vw;
+            border: 0.278vw solid #ececec;
+            box-shadow: 1.111vw 0px 2.778vw rgba(0, 0, 0, 0.25);
+            border-radius: 2.778vw;
+            font-weight: 500;
+            font-size: 3.889vw;
+            line-height: 1.2em;
+            padding: 2.778vw 4.389vw 3.5vw;
+        }
+        &__tabs-wrap {
+            border: 0.278vw solid #ececec;
+            box-shadow: 0px 1.111vw 1.111vw rgba(0, 0, 0, 0.25);
+            border-radius: 8.333vw;
+            padding: 8.556vw 5.333vw;
+        }
+        // .services__tabs
+
+        &__list {
+            gap: 5.556vw 0;
+        }
+
+        &__item {
+            width: 100%;
+            p {
+                margin-top: 2.778vw;
+            }
+        }
+        .button {
+            width: 100%;
+            padding: 3.889vw 2.778vw;
+            margin-top: 8.333vw;
+        }
+        // .services__tabs-title
+
+        &__tabs-title {
+            img {
+                width: 10vw;
+                height: 10vw;
+            }
+            h3 {
+                font-size: 4.444vw;
+                margin-left: 2.778vw;
+            }
         }
     }
 }

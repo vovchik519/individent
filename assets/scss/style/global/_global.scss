@@ -18,10 +18,6 @@ a:focus,
 a:active {
     outline: none;
 }
-p {
-    font-size: 16px;
-    line-height: 19px;
-}
 nav,
 footer,
 header,
@@ -33,6 +29,7 @@ body {
     height: 100%;
     width: 100%;
     font-size: 16px;
+    line-height: 1.2em;
     font-family: "Rubik";
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
@@ -67,6 +64,9 @@ ul li {
 img {
     vertical-align: top;
 }
+a,p,li{
+    line-height: 1.2em;
+}
 h1,
 h2,
 h3,
@@ -75,19 +75,17 @@ h5,
 h6 {
     font-size: inherit;
     font-weight: 700;
+    line-height: 1.2em;
 }
 h1 {
     font-size: 36px;
-    line-height: 43px;
     color: #353535;
 }
 h2 {
     font-size: 32px;
-    line-height: 38px;
 }
 h3 {
     font-size: 20px;
-    line-height: 24px;
 }
 .container {
     max-width: 1186px;
@@ -161,11 +159,26 @@ h3 {
     }
 }
 @media (max-width: 769px) {
+    body {
+        font-size: 3.889vw;
+    }
+    h1 {
+        font-size: 8vw;
+    }
+    h2 {
+        font-size: 5.556vw;
+    }
+    h3 {
+        font-size: 5vw;
+    }
+    .container {
+        padding: 0 5vw;
+    }
     .button {
         box-shadow: inset 0px 0px 1.389vw rgba(255, 255, 255, 0.25);
         filter: drop-shadow(0px 0px 2.778vw #8c7cec);
         font-size: 3.7vw;
-        line-height: 1.3em;
+        line-height: 1.2em;
         padding: 5vw 2vw;
         border-radius: 13.889vw;
     }

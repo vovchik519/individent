@@ -20,7 +20,7 @@
     // .firstscreen__info
 
     &__info {
-        z-index: 1;
+        z-index: 1; 
         padding-bottom: 20px;
         h1 {
             margin-bottom: 25px;
@@ -216,7 +216,7 @@
         padding-top: 18.056vw;
         &__wrapper {
             column-gap: 0;
-            row-gap: 8.333vw;
+            row-gap: 8vw;
             height: 100%;
             max-height: none;
             padding-top: 5vw;
@@ -225,18 +225,14 @@
         &__info {
             max-width: none;
             width: 100%;
+            padding-bottom: 0;
             h1,
             p {
                 width: 100%;
             }
             h1 {
-                font-size: 7.3vw;
-                line-height: 1.21em;
                 margin-bottom: 25px;
                 transform: translateX(100%);
-                span {
-                    line-height: 1.21em;
-                }
             }
             p {
                 font-size: 5.556vw;

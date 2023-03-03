@@ -49,10 +49,62 @@
         align-items: center;
         column-gap: 33px;
         line-height: 19px;
+        img{
+            width: 60px;
+            height: 60px;
+        }
     }
     .button {
         margin: 0 auto;
         width: 460px;
         height: 58px;
+    }
+}
+@media (max-width: 768px) {
+    .about {
+        padding: 8.334vw 0 8.333vw;
+        &__suptext {
+            margin-bottom: 5.556vw;
+            font-size: 5.556vw;
+            line-height: 1.2em;
+            color: #353535;
+        }
+        &__subtext {
+            font-size: 5vw;
+            line-height: 1.2em;
+        }
+        // .about__logo
+
+        &__logo {
+            max-width: 360px;
+            width: 100%;
+            height: auto;
+            margin-bottom: 4.167vw;
+        }
+
+        // .about__list
+
+        &__list {
+            row-gap: 5.556vw;
+            margin: 6.944vw 0 8.333vw;
+        }
+
+        // .about__item
+
+        &__item {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 4.167vw 0;
+            line-height: 1.2em;
+            img{
+                width: 13.889vw;
+                height: 13.889vw;
+            }
+        }
+        .button {
+            margin: 0 auto;
+            width: 100%;
+            height: auto;
+        }
     }
 }
