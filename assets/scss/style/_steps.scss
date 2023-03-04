@@ -1,6 +1,10 @@
 .steps {
     padding: 105px 0 72px;
 
+    h2{
+        text-align: center;
+        margin-bottom: 80px;
+    }
     // .steps__wrapper
 
     &__wrapper {
@@ -30,7 +34,7 @@
             width: 80px;
             height: 80px;
         }
-        h2 {
+        h3 {
             display: inline-block;
             margin: 20px 0 0 27px;
             font-size: 20px;
@@ -99,7 +103,7 @@
                 width: 17vw;
                 height: 17vw;
             }
-            h2 {
+            h3 {
                 margin: 0 0 0 4.167vw;
                 font-size: 5vw;
             }

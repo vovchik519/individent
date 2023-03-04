@@ -51,6 +51,22 @@ var swiperImage = new Swiper(".firstscreen__swiper-image", {
     },
 });
 
+var swiper = new Swiper(".doctors__swiper", {
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    slidesPerView: 'auto',
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+    },
+});
+
 var header = document.getElementsByTagName("header")[0];
 var headerHeight = header.offsetHeight;
 var prevScrollpos = window.pageYOffset;
