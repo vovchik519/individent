@@ -83,6 +83,54 @@ var swiper = new Swiper(".work__swiper", {
     },
 });
 
+var swiper = new Swiper(".review__slider-one", {
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    slidesPerView: 'auto',
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+    },
+});
+
+var swiper = new Swiper(".review__slider-two", {
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    slidesPerView: 'auto',
+    autoplay: {
+        delay: 7000,
+        disableOnInteraction: false,
+    },
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+    },
+});
+
+var swiper = new Swiper(".review__slider-three", {
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    slidesPerView: 'auto',
+    autoplay: {
+        delay: 8000,
+        disableOnInteraction: false,
+    },
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+    },
+});
+
 var header = document.getElementsByTagName("header")[0];
 var headerHeight = header.offsetHeight;
 var prevScrollpos = window.pageYOffset;
@@ -101,16 +149,10 @@ window.addEventListener("load", function () {
 
 window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos || currentScrollPos <= headerHeight) {
-        header.classList.remove("hide");
-    } else {
-        header.classList.add("hide");
-        phone.style.display = "none";
-        address.style.display = "none";
-    }
     prevScrollpos = currentScrollPos;
     updateHeaderClass();
 };
+
 
 let bodyOverflow = document.querySelector('body');
 let menuBtn = document.querySelector('.menu__burger');

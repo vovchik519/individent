@@ -3,8 +3,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    transition: transform 0.4s ease;
-    transform: translateY(0);
+    transition: 0.4s;
     z-index: 50;
     padding: 13px 0;
     // .header__logo
@@ -141,11 +140,9 @@
         display: none;
     }
 }
-.header.hide {
-    transform: translateY(-100%);
-}
 .header.bg {
     background-color: white;
+    box-shadow: 0 0 10px rgb(203, 203, 203);
 }
 @media (max-width: 1200px) {
     .header {
