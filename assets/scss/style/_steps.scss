@@ -1,7 +1,7 @@
 .steps {
     padding: 105px 0 72px;
 
-    h2{
+    h2 {
         text-align: center;
         margin-bottom: 80px;
     }
@@ -78,7 +78,10 @@
 @media (max-width: 768px) {
     .steps {
         padding: 11.111vw 0 5.556vw;
-
+        h2 {
+            text-align: center;
+            margin-bottom: 8.333vw;
+        }
         // .steps__wrapper
 
         &__wrapper {
