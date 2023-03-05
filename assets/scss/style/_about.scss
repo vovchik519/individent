@@ -24,6 +24,12 @@
         font-weight: 700;
         color: black;
         text-align: center;
+        .green {
+            color: rgb(0, 207, 0);
+        }
+        .red {
+            color: red;
+        }
     }
     // .about__logo
 
@@ -49,7 +55,7 @@
         align-items: center;
         column-gap: 33px;
         line-height: 19px;
-        img{
+        img {
             width: 60px;
             height: 60px;
         }
@@ -96,7 +102,7 @@
             align-items: flex-start;
             gap: 4.167vw 0;
             line-height: 1.2em;
-            img{
+            img {
                 width: 13.889vw;
                 height: 13.889vw;
             }
