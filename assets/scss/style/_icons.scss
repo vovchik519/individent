@@ -7,99 +7,107 @@
     top: 0;
     left: 0;
     z-index: -1;
-    img{
+    img {
         width: 50px;
         height: 50px;
+    }
+}
+@media (max-width: 768px) {
+    .icons__item {
+        img {
+            width: 10vw;
+            height: 10vw;
+        }
     }
 }
 .icons__item:nth-child(1) {
     left: 0.764vw;
     top: 808.58px - 643px;
-    img{
+    img {
         transform: rotate(-20.58deg);
     }
 }
 .icons__item:nth-child(2) {
     left: 42.222vw;
     top: 1062.27px - 643px;
-    img{
+    img {
         transform: rotate(-80.19deg);
     }
 }
 .icons__item:nth-child(3) {
     left: 94.15vw;
     top: 867px - 643px;
-    img{
+    img {
         transform: rotate(28.37deg);
     }
 }
 .icons__item:nth-child(4) {
     left: 4.903vw;
     top: 1193px - 643px;
-    img{
+    img {
         transform: rotate(29.48deg);
     }
 }
 .icons__item:nth-child(5) {
     left: 4.514vw;
     top: 1643.27px - 643px;
-    img{
+    img {
         transform: rotate(-80.19deg);
     }
 }
 .icons__item:nth-child(6) {
     left: 94.341vw;
     top: 1575.19px - 643px;
-    img{
+    img {
         transform: rotate(29.1deg);
     }
 }
 .icons__item:nth-child(7) {
     left: 2.639vw;
     top: 1948.34px - 643px;
-    img{
+    img {
         transform: rotate(-31.79deg);
     }
 }
 .icons__item:nth-child(8) {
     left: 52.761vw;
     top: 2181px - 643px;
-    img{
+    img {
         transform: rotate(28.37deg);
     }
 }
 .icons__item:nth-child(9) {
     left: 94.972vw;
     top: 2068px - 643px;
-    img{
+    img {
         transform: rotate(29.48deg);
     }
 }
 .icons__item:nth-child(10) {
     left: 2.778vw;
     top: 2589.94px - 643px;
-    img{
+    img {
         transform: rotate(-21.02deg);
     }
 }
 .icons__item:nth-child(11) {
     left: 91.779vw;
     top: 2703px - 643px;
-    img{
+    img {
         transform: rotate(1.86deg);
     }
 }
 .icons__item:nth-child(12) {
     left: 4.486vw;
     top: 2914px - 643px;
-    img{
+    img {
         transform: rotate(29.48deg);
     }
 }
 .icons__item:nth-child(13) {
     left: 95.161vw;
     top: 3091px - 643px;
-    img{
+    img {
         transform: rotate(29.1deg);
     }
 }
@@ -107,154 +115,154 @@
 .icons__item:nth-child(14) {
     left: 0.764vw;
     top: 3808.58px - 643px;
-    img{
+    img {
         transform: rotate(-20.58deg);
     }
 }
 .icons__item:nth-child(15) {
     left: 42.222vw;
     top: 4062.27px - 643px;
-    img{
+    img {
         transform: rotate(-80.19deg);
     }
 }
 .icons__item:nth-child(16) {
     left: 4.903vw;
     top: 4193px - 643px;
-    img{
+    img {
         transform: rotate(29.48deg);
     }
 }
 .icons__item:nth-child(17) {
     left: 4.514vw;
     top: 4643.27px - 643px;
-    img{
+    img {
         transform: rotate(-80.19deg);
     }
 }
 .icons__item:nth-child(18) {
     left: 94.341vw;
     top: 4575.19px - 643px;
-    img{
+    img {
         transform: rotate(29.1deg);
     }
 }
 .icons__item:nth-child(19) {
     left: 2.639vw;
     top: 4948.34px - 643px;
-    img{
+    img {
         transform: rotate(-31.79deg);
     }
 }
 .icons__item:nth-child(20) {
     left: 52.761vw;
     top: 5181px - 643px;
-    img{
+    img {
         transform: rotate(28.37deg);
     }
 }
 .icons__item:nth-child(21) {
     left: 94.972vw;
     top: 5068px - 643px;
-    img{
+    img {
         transform: rotate(29.48deg);
     }
 }
 .icons__item:nth-child(22) {
     left: 2.778vw;
     top: 5589.94px - 643px;
-    img{
+    img {
         transform: rotate(-21.02deg);
     }
 }
 .icons__item:nth-child(23) {
     left: 91.779vw;
     top: 5703px - 643px;
-    img{
+    img {
         transform: rotate(1.86deg);
     }
 }
 .icons__item:nth-child(24) {
     left: 4.486vw;
     top: 5914px - 643px;
-    img{
+    img {
         transform: rotate(29.48deg);
     }
 }
 .icons__item:nth-child(25) {
     left: 95.161vw;
     top: 6091px - 643px;
-    img{
+    img {
         transform: rotate(29.1deg);
     }
 }
 .icons__item:nth-child(26) {
     left: 85.161vw;
     top: 6791px - 643px;
-    img{
+    img {
         transform: rotate(29.1deg);
     }
 }
 .icons__item:nth-child(27) {
     left: 91.779vw;
     top: 7303px - 643px;
-    img{
+    img {
         transform: rotate(1.86deg);
     }
 }
 .icons__item:nth-child(28) {
     left: 4.486vw;
     top: 7814px - 643px;
-    img{
+    img {
         transform: rotate(29.48deg);
     }
 }
 .icons__item:nth-child(29) {
     left: 95.161vw;
     top: 8091px - 643px;
-    img{
+    img {
         transform: rotate(29.1deg);
     }
 }
 .icons__item:nth-child(30) {
     left: 90.161vw;
     top: 8391px - 643px;
-    img{
+    img {
         transform: rotate(29.1deg);
     }
 }
 .icons__item:nth-child(31) {
     left: 85.161vw;
     top: 8791px - 643px;
-    img{
+    img {
         transform: rotate(29.1deg);
     }
 }
 .icons__item:nth-child(32) {
     left: 15.161vw;
     top: 9091px - 643px;
-    img{
+    img {
         transform: rotate(27.1deg);
     }
 }
 .icons__item:nth-child(33) {
     left: 95.161vw;
     top: 9491px - 643px;
-    img{
+    img {
         transform: rotate(25.1deg);
     }
 }
 .icons__item:nth-child(34) {
     left: 5.161vw;
     top: 9791px - 643px;
-    img{
+    img {
         transform: rotate(24.1deg);
     }
 }
 .icons__item:nth-child(35) {
     left: 10.161vw;
     top: 1000px - 643px;
-    img{
+    img {
         transform: rotate(29.1deg);
     }
 }

@@ -40,7 +40,6 @@
         .swiper-slide {
             text-align: center;
             font-size: 18px;
-            background: #fff;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -58,12 +57,74 @@
         .swiper-button-prev {
             left: -55px;
         }
-        .swiper-pagination {
+    }
+}
+@media (max-width: 1200px) {
+    .doctors {
+        &__wrapper {
+            column-gap: 10vw;
+        }
+        &__slider {
+            height: 100%;
+            .swiper-wrapper {
+                width: 30vw;
+                height: 100%;
+            }
+        }
+        &__info {
+            width: 50vw;
+        }
+        img {
+            width: 50vw;
+            height: auto;
         }
     }
+}
+@media (max-width: 768px) {
+    .doctors {
+        padding: 8.333vw 0 11.111vw;
+        h2 {
+            margin-bottom: 8.33vw;
+        }
+        // .doctors__wrapper
 
-    // .doctors__swiper
+        &__wrapper {
+            flex-direction: column;
+            gap: 8.333vw 0;
+        }
 
-    &__swiper {
+        // .doctors__info
+
+        &__info {
+            width: 100%;
+            p {
+                margin-bottom: 0;
+            }
+        }
+        img {
+            display: none;
+        }
+
+        // .doctors__slider
+
+        &__slider {
+            .swiper {
+                width: 70%;
+                height: 100%;
+            }
+            .swiper-wrapper {
+                width: 100%;
+                height: auto;
+            }
+            .swiper-slide {
+                font-size: 5vw;
+            }
+            .swiper-button-next {
+                right: 0;
+            }
+            .swiper-button-prev {
+                left: 0;
+            }
+        }
     }
 }
