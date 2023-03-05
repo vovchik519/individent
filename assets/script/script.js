@@ -188,13 +188,13 @@ let popupClose = document.querySelector('.popup__close');
 button.forEach(function (item) {
     item.addEventListener('click', function () {
         popup.classList.add('active');
-        bodyOverflow.classList.add('lock');
+        bodyOverflow.classList.add('lock-all');
     });
 });
 
 popupClose.addEventListener('click', function () {
     popup.classList.remove('active');
-    bodyOverflow.classList.remove('lock');
+    bodyOverflow.classList.remove('lock-all');
 });
 
 function openTab(evt, tabId) {
