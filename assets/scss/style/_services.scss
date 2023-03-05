@@ -1,11 +1,8 @@
 .services {
-    padding: 15px 0 135px;
+    padding: 15px 0 70px;
     // .services__wrapper
 
     &__wrapper {
-        h2 {
-            text-align: center;
-        }
     }
     .text-fill::before {
         animation-duration: 0.4s;

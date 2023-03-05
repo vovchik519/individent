@@ -85,6 +85,7 @@ h1 {
 }
 h2 {
     font-size: 32px;
+    text-align: center;
 }
 h3 {
     font-size: 20px;
@@ -112,14 +113,16 @@ h3 {
         rgba(251, 254, 254, 1) 60%,
         rgba(233, 250, 255, 1) 100%
     );
+    z-index: -2;
 }
 .footer {
     flex: 0 0 auto;
+    background-color: #e9faff;
 }
 .button {
     display: block;
-    box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.25);
-    filter: drop-shadow(0px 0px 10px #8c7cec);
+    box-shadow: inset 0px 0px 5px #ffffff;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     color: white;
     font-size: 16px;
     line-height: 19px;
@@ -147,6 +150,28 @@ h3 {
 }
 .text-fill.active::before {
     animation: animText 1.3s linear forwards 0.3s;
+}
+.swiper-button-next,
+.swiper-button-prev {
+    margin: 0;
+    padding: 0;
+    background: rgba(95, 81, 177, 0.5);
+    border-radius: 5px;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
+    width: 40px;
+    height: 40px;
+    opacity: 1 !important;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    color: white;
+    font-size: 15px;
+}
+.swiper-button-disabled {
+    background: rgba(123, 123, 123, 0.5);
+}
+.swiper-pagination{
+    bottom: -30px !important;
 }
 @keyframes animText {
     0% {
@@ -190,5 +215,15 @@ h3 {
         line-height: 1.2em;
         padding: 5vw 2vw;
         border-radius: 13.889vw;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 11.111vw;
+        height: 11.111vw;
+        opacity: 1 !important;
+    }
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        font-size: 7vw;
     }
 }

@@ -20,7 +20,7 @@
     // .firstscreen__info
 
     &__info {
-        z-index: 1; 
+        z-index: 1;
         padding-bottom: 20px;
         h1 {
             margin-bottom: 25px;
@@ -118,25 +118,9 @@
         top: auto;
         right: auto;
         transform: translateX(-70px);
-        margin: 0;
-        padding: 0;
-        background: rgba(95, 81, 177, 0.5);
-        border-radius: 5px;
-        filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
-        width: 40px;
-        height: 40px;
-        opacity: 1 !important;
     }
     .swiper-button-next {
         left: 47px;
-    }
-    .swiper-button-next::after,
-    .swiper-button-prev::after {
-        color: white;
-        font-size: 15px;
-    }
-    .swiper-button-disabled {
-        background: rgba(123, 123, 123, 0.5);
     }
 }
 .firstscreen::before {
@@ -265,13 +249,6 @@
             right: auto;
             left: 50%;
             transform: translateX(calc(-50% - 7.5vw));
-            width: 11.111vw;
-            height: 11.111vw;
-            opacity: 1 !important;
-        }
-        .swiper-button-next::after,
-        .swiper-button-prev::after {
-            font-size: 7vw;
         }
         .swiper-button-next {
             right: auto;

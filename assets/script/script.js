@@ -37,8 +37,8 @@ var swiperInfo = new Swiper(".firstscreen__swiper-info", {
 
 var swiperImage = new Swiper(".firstscreen__swiper-image", {
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".firstscreen-button-next",
+        prevEl: ".firstscreen-button-prev",
     },
     spaceBetween: 30,
     controller: {
@@ -53,81 +53,86 @@ var swiperImage = new Swiper(".firstscreen__swiper-image", {
 
 var swiper = new Swiper(".doctors__swiper", {
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".doctors-button-next",
+        prevEl: ".doctors-button-prev",
     },
     slidesPerView: 'auto',
     autoplay: {
         delay: 5000,
         disableOnInteraction: false,
     },
+    spaceBetween: 15,
     loop: true,
     pagination: {
-        el: ".swiper-pagination",
+        el: ".doctors-pagination",
     },
 });
 
 var swiper = new Swiper(".work__swiper", {
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".work-button-next",
+        prevEl: ".work-button-prev",
     },
     slidesPerView: 'auto',
+    spaceBetween: 15,
     autoplay: {
         delay: 5000,
         disableOnInteraction: false,
     },
     loop: true,
     pagination: {
-        el: ".swiper-pagination",
+        el: ".work-pagination",
     },
 });
 
 var swiper = new Swiper(".review__slider-one", {
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".slider-button-next-one",
+        prevEl: ".slider-button-prev-one",
     },
     slidesPerView: 'auto',
+    spaceBetween: 15,
     autoplay: {
         delay: 5000,
         disableOnInteraction: false,
     },
     loop: true,
     pagination: {
-        el: ".swiper-pagination",
+        el: ".slider-pagination-one",
     },
 });
 
 var swiper = new Swiper(".review__slider-two", {
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".slider-button-next-two",
+        prevEl: ".slider-button-prev-two",
     },
     slidesPerView: 'auto',
+    spaceBetween: 15,
     autoplay: {
         delay: 7000,
         disableOnInteraction: false,
     },
     loop: true,
     pagination: {
-        el: ".swiper-pagination",
+        el: ".slider-pagination-two",
     },
 });
 
 var swiper = new Swiper(".review__slider-three", {
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".slider-button-next-three",
+        prevEl: ".slider-button-prev-three",
     },
     slidesPerView: 'auto',
+    spaceBetween: 15,
     autoplay: {
         delay: 8000,
         disableOnInteraction: false,
     },
     loop: true,
     pagination: {
-        el: ".swiper-pagination",
+        el: ".slider-pagination-three",
     },
 });
 

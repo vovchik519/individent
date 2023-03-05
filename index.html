@@ -138,8 +138,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <button type="button" class="swiper-button-next" aria-label="Слайдер далее"></button>
-                            <button type="button" class="swiper-button-prev" aria-label="Слайдер назад"></button>
+                            <button type="button" class="swiper-button-next firstscreen-button-next"
+                                aria-label="Слайдер далее"></button>
+                            <button type="button" class="swiper-button-prev firstscreen-button-prev"
+                                aria-label="Слайдер назад"></button>
                         </div>
                     </div>
                 </div>
@@ -419,24 +421,23 @@
                 <section class="advantage" id="advantage">
                     <div class="container">
                         <div class="advantage__wrapper">
-                            <h2>Наши преимущества</h2>
+                            <h2>Наши <span data-text="преимущества" class="text-fill">преимущества</span></h2>
                             <ul class="advantage__list">
-                                <li class="advantage-item">
+                                <li class="advantage__item">
                                     <div class="advantage__title">
-                                        <p>1</p>
+                                        <p><span>1</span></p>
                                         <h3>КАЧЕСТВЕННЫЕ МАТЕРИАЛЫ</h3>
                                     </div>
-                                    <p>1
-                                        КАЧЕСТВЕННЫЕ МАТЕРИАЛЫ
+                                    <p>
                                         Используем профессиональные материалы для стоматологических работ. Заказываем
                                         все расходники от ведущих мировых
                                         производителей, таких как США, Япония, Швейцария. Все они прошли клинические
                                         исследования и абсолютно безопасны для
                                         использования.</p>
                                 </li>
-                                <li class="advantage-item">
+                                <li class="advantage__item">
                                     <div class="advantage__title">
-                                        <p>2</p>
+                                        <p><span>2</span></p>
                                         <h3>
                                             БЕЗБОЛЕЗНЕННОЕ ЛЕЧЕНИЕ
                                         </h3>
@@ -446,9 +447,9 @@
                                         Все они прошли клинические исследования и абсолютно безопасны для использования.
                                     </p>
                                 </li>
-                                <li class="advantage-item">
+                                <li class="advantage__item">
                                     <div class="advantage__title">
-                                        <p>3</p>
+                                        <p><span>3</span></p>
                                         <h3>
                                             ВЫСОКОКВАЛИФИ-ЦИРОВАННЫЕ ВРАЧИ
                                         </h3>
@@ -458,9 +459,9 @@
                                         Все они прошли клинические исследования и абсолютно безопасны для использования.
                                     </p>
                                 </li>
-                                <li class="advantage-item">
+                                <li class="advantage__item">
                                     <div class="advantage__title">
-                                        <p>4</p>
+                                        <p><span>4</span></p>
                                         <h3>
                                             ИННОВАЦИОННОЕ ОБОРУДОВАНИЕ
                                         </h3>
@@ -469,9 +470,9 @@
                                         специалистами, поэтому полностью безопасно даже для детей и обладает высокой
                                         скоростью и эффективностью работы.</p>
                                 </li>
-                                <li class="advantage-item">
+                                <li class="advantage__item">
                                     <div class="advantage__title">
-                                        <p>5</p>
+                                        <p><span>5</span></p>
                                         <h3>
                                             БЕЗОПАСНОСТЬ ПАЦИЕНТОВ
                                         </h3>
@@ -480,9 +481,9 @@
                                         безопасности, поэтому в клинике предусмотрены стерильные помещения , а весь
                                         воздух в зоне ожидания подвергается кварцеванию.</p>
                                 </li>
-                                <li class="advantage-item">
+                                <li class="advantage__item">
                                     <div class="advantage__title">
-                                        <p>6</p>
+                                        <p><span>6</span></p>
                                         <h3>
                                             УДОБНОЕ РАСПОЛОЖЕНИЕ КЛИНИКИ
                                         </h3>
@@ -498,26 +499,28 @@
                 <section class="feedback">
                     <div class="container">
                         <div class="feedback__wrapper">
-                            <h2>Приходите на прием-
-                                осмотрим и составим план лечения
-                                <span data-text="БЕСПЛАТНО" class="text-fill">БЕСПЛАТНО</span>
-                            </h2>
-                            <form>
-                                <fieldset>
-                                    <p><input type="text" placeholder="Имя">
-                                        <input type="tel" placeholder="+7 (777) 777 77 77">
-                                    </p>
-                                    <button type="submit">Записаться на прием</button>
-                                </fieldset>
-                            </form>
-                            <img src="./assets/image/feedback/image.png" alt="Сотрудники стоматологий в форме">
+                            <div class="feedback__info">
+                                <h2>Приходите на прием-
+                                    осмотрим и составим план лечения<br>
+                                    <span data-text="БЕСПЛАТНО" class="text-fill">БЕСПЛАТНО</span>
+                                </h2>
+                                <form>
+                                    <fieldset>
+                                        <input type="text" placeholder="Имя" required>
+                                        <input type="tel" placeholder="+7 (777) 777 77 77" required>
+                                        <button type="submit" class="button">Записаться на прием</button>
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <img class="feedback__image" src="./assets/image/feedback/image.png"
+                                alt="Сотрудники стоматологий в форме">
                         </div>
                     </div>
                 </section>
                 <section class="doctors">
                     <div class="container">
+                        <h2><span data-text="Наши" class="text-fill">Наши</span> врачи</h2>
                         <div class="doctors__wrapper">
-                            <h2><span data-text="Наши" class="text-fill">Наши</span> врачи</h2>
                             <div class="doctors__info">
                                 <p>Наша команда специалистов ежегодно повышает квалификацию, и увлечена своим делом.
                                     Наша
@@ -543,17 +546,13 @@
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide"><img src="./assets/image/doctors/slider-1.jpg"
                                                 alt="Имя фамилия"></div>
-                                        <div class="swiper-slide"><img src="./assets/image/doctors/slider-1.jpg"
-                                                alt="Имя фамилия"></div>
-                                        <div class="swiper-slide"><img src="./assets/image/doctors/slider-1.jpg"
-                                                alt="Имя фамилия"></div>
-                                        <div class="swiper-slide"><img src="./assets/image/doctors/slider-1.jpg"
+                                        <div class="swiper-slide"><img src="./assets/image/doctors/slider-2.jpeg"
                                                 alt="Имя фамилия"></div>
                                     </div>
-                                    <div class="swiper-button-next"></div>
-                                    <div class="swiper-button-prev"></div>
-                                    <div class="swiper-pagination"></div>
                                 </div>
+                                <div class="swiper-button-next doctors-button-next"></div>
+                                <div class="swiper-button-prev doctors-button-prev"></div>
+                                <div class="swiper-pagination doctors-pagination"></div>
                             </div>
                         </div>
                     </div>
@@ -583,12 +582,14 @@
                                         вместо 19 990тг</p>
                                     <img src="./assets/image/action/img-3.png" alt="чистка зубов">
                                 </li>
-                                <li>
+                            </ul>
+                            <ul class="action__list action__list-bottom">
+                                <li class="action__item">
                                     <p>Постоянным пациентам</p>
                                     <p>скидка 10%</p>
                                     <img src="./assets/image/action/img-4.png" alt="девушка">
                                 </li>
-                                <li>
+                                <li class="action__item">
                                     <p>Отзыв на 2 Гис</p>
                                     <p>скидка 5%</p>
                                     <img src="./assets/image/action/img-5.png" alt="значек 2gis">
@@ -609,19 +610,13 @@
                                             <img src="./assets/image/work/img-1.jpg" alt="зубы">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="./assets/image/work/img-1.jpg" alt="зубы">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./assets/image/work/img-1.jpg" alt="зубы">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./assets/image/work/img-1.jpg" alt="зубы">
+                                            <img src="./assets/image/work/img-2.jpeg" alt="зубы">
                                         </div>
                                     </div>
-                                    <div class="swiper-button-next"></div>
-                                    <div class="swiper-button-prev"></div>
-                                    <div class="swiper-pagination"></div>
                                 </div>
+                                <div class="swiper-button-next work-button-next"></div>
+                                <div class="swiper-button-prev work-button-prev"></div>
+                                <div class="swiper-pagination work-pagination"></div>
                             </div>
                         </div>
                     </div>
@@ -629,139 +624,114 @@
                 <section class="review">
                     <div class="container">
                         <div class="review__wrapper">
-                            <h2>Отзывы и благодарственные письма</h2>
+                            <h2><span data-text="Отзывы" class="text-fill">Отзывы</span> и благодарственные письма</h2>
                             <div class="review__slider">
                                 <div class="review__slider-image">
-                                    <div class="swiper review__slider-one">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/review/reviews/slide-1.jpg" alt="отзыв"
-                                                    loading="lazy">
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/review/reviews/slide-1.jpg" alt="отзыв"
-                                                    loading="lazy">
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/review/reviews/slide-1.jpg" alt="отзыв"
-                                                    loading="lazy">
+                                    <div class="review__slider-wrap">
+                                        <div class="swiper review__slider-one">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <img src="./assets/image/review/reviews/slide-1.jpg" alt="отзыв"
+                                                        loading="lazy">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./assets/image/review/reviews/slide-1.jpg" alt="отзыв"
+                                                        loading="lazy">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./assets/image/review/reviews/slide-1.jpg" alt="отзыв"
+                                                        loading="lazy">
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="swiper-button-next"></div>
-                                        <div class="swiper-button-prev"></div>
-                                        <div class="swiper-pagination"></div>
+                                        <div class="swiper-button-next slider-button-next-one"></div>
+                                        <div class="swiper-button-prev slider-button-prev-one"></div>
+                                        <div class="swiper-pagination slider-pagination-one"></div>
                                     </div>
-                                    <div class="swiper review__slider-two">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/review/letters/slide-1.jpg"
-                                                    alt="благодарственное письмо" loading="lazy">
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/review/letters/slide-1.jpg"
-                                                    alt="благодарственное письмо" loading="lazy">
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/review/letters/slide-1.jpg"
-                                                    alt="благодарственное письмо" loading="lazy">
+                                    <div class="review__slider-wrap">
+                                        <div class="swiper review__slider-two">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <img src="./assets/image/review/letters/slide-1.jpg"
+                                                        alt="благодарственное письмо" loading="lazy">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./assets/image/review/letters/slide-1.jpg"
+                                                        alt="благодарственное письмо" loading="lazy">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./assets/image/review/letters/slide-1.jpg"
+                                                        alt="благодарственное письмо" loading="lazy">
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="swiper-button-next"></div>
-                                        <div class="swiper-button-prev"></div>
-                                        <div class="swiper-pagination"></div>
+                                        <div class="swiper-button-next slider-button-next-two"></div>
+                                        <div class="swiper-button-prev slider-button-prev-two"></div>
+                                        <div class="swiper-pagination slider-pagination-two"></div>
                                     </div>
                                 </div>
                                 <div class="review__slider-text">
-                                    <div class="swiper review__slider-three">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <div class="review__slide-title">
-                                                    <img src="./assets/image/review/text/img.jpg" alt="фотография">
-                                                    <div class="review__slide-title-name">
-                                                        <p>Наталья Борисова</p>
-                                                        <img src="./assets/image/review/text/star-5.png" alt="5 звезд">
+                                    <div class="review__slider-wrap">
+                                        <div class="swiper review__slider-three">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="review__slide-title">
+                                                        <img src="./assets/image/review/text/img.png" alt="фотография">
+                                                        <div class="review__slide-title-name">
+                                                            <p>Наталья Борисова</p>
+                                                            <img src="./assets/image/review/text/star-5.png"
+                                                                alt="5 звезд">
+                                                        </div>
                                                     </div>
+                                                    <p>Всегда очень чисто и приветливый персонал. Все готовы прийти на
+                                                        помощь, и неважно, какой врач тебя наблюдает- все врачи
+                                                        готовы помочь 24/7. Видно, что соседи вороны руководства
+                                                        проводится
+                                                        огромная работа с персоналом и политикой лояльности
+                                                        к клиентам и я это очень ценю.</p>
                                                 </div>
-                                                <p>Всегда очень чисто и приветливый персонал. Все готовы прийти на
-                                                    помощь, и неважно, какой врач тебя наблюдает- все врачи
-                                                    готовы помочь 24/7. Видно, что соседи вороны руководства проводится
-                                                    огромная работа с персоналом и политикой лояльности
-                                                    к клиентам и я это очень ценю.</p>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="review__slide-title">
-                                                    <img src="./assets/image/review/text/img.jpg" alt="фотография">
-                                                    <div class="review__slide-title-name">
-                                                        <p>Наталья Борисова</p>
-                                                        <img src="./assets/image/review/text/star-5.png" alt="5 звезд">
+                                                <div class="swiper-slide">
+                                                    <div class="review__slide-title">
+                                                        <img src="./assets/image/review/text/img.png" alt="фотография">
+                                                        <div class="review__slide-title-name">
+                                                            <p>Наталья Борисова</p>
+                                                            <img src="./assets/image/review/text/star-5.png"
+                                                                alt="5 звезд">
+                                                        </div>
                                                     </div>
+                                                    <p>Всегда очень чисто и приветливый персонал. Все готовы прийти на
+                                                        помощь, и неважно, какой врач тебя наблюдает- все врачи
+                                                        готовы помочь 24/7. Видно, что соседи вороны руководства
+                                                        проводится
+                                                        огромная работа с персоналом и политикой лояльности
+                                                        к клиентам и я это очень ценю.</p>
                                                 </div>
-                                                <p>Всегда очень чисто и приветливый персонал. Все готовы прийти на
-                                                    помощь, и неважно, какой врач тебя наблюдает- все врачи
-                                                    готовы помочь 24/7. Видно, что соседи вороны руководства проводится
-                                                    огромная работа с персоналом и политикой лояльности
-                                                    к клиентам и я это очень ценю.</p>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="review__slide-title">
-                                                    <img src="./assets/image/review/text/img.jpg" alt="фотография">
-                                                    <div class="review__slide-title-name">
-                                                        <p>Наталья Борисова</p>
-                                                        <img src="./assets/image/review/text/star-5.png" alt="5 звезд">
+                                                <div class="swiper-slide">
+                                                    <div class="review__slide-title">
+                                                        <img src="./assets/image/review/text/img.png" alt="фотография">
+                                                        <div class="review__slide-title-name">
+                                                            <p>Наталья Борисова</p>
+                                                            <img src="./assets/image/review/text/star-5.png"
+                                                                alt="5 звезд">
+                                                        </div>
                                                     </div>
+                                                    <p>Всегда очень чисто и приветливый персонал. Все готовы прийти на
+                                                        помощь, и неважно, какой врач тебя наблюдает- все врачи
+                                                        готовы помочь 24/7. Видно, что соседи вороны руководства
+                                                        проводится
+                                                        огромная работа с персоналом и политикой лояльности
+                                                        к клиентам и я это очень ценю.</p>
                                                 </div>
-                                                <p>Всегда очень чисто и приветливый персонал. Все готовы прийти на
-                                                    помощь, и неважно, какой врач тебя наблюдает- все врачи
-                                                    готовы помочь 24/7. Видно, что соседи вороны руководства проводится
-                                                    огромная работа с персоналом и политикой лояльности
-                                                    к клиентам и я это очень ценю.</p>
-                                            </div>
-                                            <div class="swiper-slide">
-                                            </div>
-                                            <div class="swiper-slide">
                                             </div>
                                         </div>
-                                        <div class="swiper-button-next"></div>
-                                        <div class="swiper-button-prev"></div>
-                                        <div class="swiper-pagination"></div>
+                                        <div class="swiper-button-next slider-button-next-three"></div>
+                                        <div class="swiper-button-prev slider-button-prev-three"></div>
+                                        <div class="swiper-pagination slider-pagination-three"></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
-                <section class="contact">
-                    <div class="container">
-                        <div class="contact__wrapper">
-                            <h2>Наши<span class="text-fill">контакты</span></h2>
-                            <div class="contact__address">
-                                <div class="contact__map">
-                                    <script type="text/javascript" charset="utf-8" async
-                                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abfaf754c7e1dec3bf720993ac474dede1b3e97df287d2ee496452dc4324a2410&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
-                                </div>
-                                <div class="contact__info">
-                                    <div class="contact__info-top">
-                                        <h3>Адрес</h3>
-                                        <p>г. Алматы, ул. Шагабутдинова 132</p>
-                                    </div>
-                                    <div class="contact__info-bottom">
-                                        <h3>Телефон</h3>
-                                        <a href="tel:+77027659788">+7 702 765 97 88</a>
-                                        <a href="tel:+77027659788">+7 702 765 97 88</a>
-                                        <button class="button">Записаться на прием</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <ul class="contact__list">
-                                <li class="contact__item">© 2023, «Individent.kz»</li>
-                                <li class="contact__item">© Все права защищены</li>
-                                <li class="contact__item">Разработка веб студии
-                                    <a href="https://xn--b1adeadlc3bdjl.kz/sozdanie-sajtov/lendingi/" target="_blank">
-                                        <img src="./assets/image/logo-webcompany.png" alt="Продвижение.kz">
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
                 </section>
                 <div class="icons__wrap" aria-hidden="true">
                     <span class="icons__item"><img src="./assets/image/icons/icons-1.png" alt="icon"></span>
@@ -777,10 +747,66 @@
                     <span class="icons__item"><img src="./assets/image/icons/icons-2.png" alt="icon"></span>
                     <span class="icons__item"><img src="./assets/image/icons/icons-4.png" alt="icon"></span>
                     <span class="icons__item"><img src="./assets/image/icons/icons-1.png" alt="icon"></span>
+                    <span class="icons__item"><img src="./assets/image/icons/icons-1.png" alt="icon"></span>
+                    <span class="icons__item"><img src="./assets/image/icons/icons-2.png" alt="icon"></span>
+                    <span class="icons__item"><img src="./assets/image/icons/icons-3.png" alt="icon"></span>
+                    <span class="icons__item"><img src="./assets/image/icons/icons-4.png" alt="icon"></span>
+                    <span class="icons__item"><img src="./assets/image/icons/icons-2.png" alt="icon"></span>
+                    <span class="icons__item"><img src="./assets/image/icons/icons-1.png" alt="icon"></span>
+                    <span class="icons__item"><img src="./assets/image/icons/icons-5.png" alt="icon"></span>
+                    <span class="icons__item"><img src="./assets/image/icons/icons-3.png" alt="icon"></span>
+                    <span class="icons__item"><img src="./assets/image/icons/icons-4.png" alt="icon"></span>
+                    <span class="icons__item"><img src="./assets/image/icons/icons-3.png" alt="icon"></span>
+                    <span class="icons__item"><img src="./assets/image/icons/icons-2.png" alt="icon"></span>
+                    <span class="icons__item"><img src="./assets/image/icons/icons-4.png" alt="icon"></span>
+                    <span class="icons__item"><img src="./assets/image/icons/icons-1.png" alt="icon"></span>
+                    <span class="icons__item"><img src="./assets/image/icons/icons-4.png" alt="icon"></span>
+                    <span class="icons__item"><img src="./assets/image/icons/icons-2.png" alt="icon"></span>
+                    <span class="icons__item"><img src="./assets/image/icons/icons-1.png" alt="icon"></span>
+                    <span class="icons__item"><img src="./assets/image/icons/icons-5.png" alt="icon"></span>
+                    <span class="icons__item"><img src="./assets/image/icons/icons-3.png" alt="icon"></span>
+                    <span class="icons__item"><img src="./assets/image/icons/icons-4.png" alt="icon"></span>
+                    <span class="icons__item"><img src="./assets/image/icons/icons-3.png" alt="icon"></span>
+                    <span class="icons__item"><img src="./assets/image/icons/icons-3.png" alt="icon"></span>
+                    <span class="icons__item"><img src="./assets/image/icons/icons-3.png" alt="icon"></span>
                 </div>
             </div>
         </main>
-        <footer class="footer"></footer>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <h2>Наши <span data-text="контакты" class="text-fill">контакты</span></h2>
+                    <div class="footer__address">
+                        <div class="footer__map">
+                            <script type="text/javascript" charset="utf-8" async
+                                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abfaf754c7e1dec3bf720993ac474dede1b3e97df287d2ee496452dc4324a2410&amp;width=655&amp;height=380&amp;lang=ru_RU&amp;scroll=true"></script>
+                        </div>
+                        <div class="footer__info">
+                            <div class="footer__info-top">
+                                <h3>Адрес</h3>
+                                <p>г. Алматы, ул. Шагабутдинова 132</p>
+                            </div>
+                            <div class="footer__info-bottom">
+                                <h3>Телефон</h3>
+                                <a href="tel:+77027659788">+7 702 765 97 88</a>
+                                <a href="tel:+77027659788">+7 702 765 97 88</a>
+                                <button class="button">Записаться на прием</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__subinfo">
+                        <div class="footer__subinfo-wrap">
+                            <div class="footer__item">© 2023, «Individent.kz»</div>
+                            <div class="footer__item">© Все права защищены</div>
+                        </div>
+                        <div class="footer__item">Разработка веб студии
+                            <a href="https://xn--b1adeadlc3bdjl.kz/sozdanie-sajtov/lendingi/" target="_blank">
+                                <img src="./assets/image/logo-webcompany.png" alt="Продвижение.kz">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </footer>
     </div>
     <script src="./assets/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/script/script.js"></script>
