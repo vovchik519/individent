@@ -3,7 +3,7 @@
     // .work__wrapper
 
     &__wrapper {
-        h2{
+        h2 {
             margin-bottom: 90px;
         }
     }
@@ -12,10 +12,10 @@
 
     &__slider {
         position: relative;
-        width: 940px;
+        max-width: 65vw;
         margin: 0 auto;
         .swiper {
-            width: 755px;
+            width: 80%;
             height: 100%;
         }
 
@@ -34,11 +34,36 @@
             height: 100%;
             object-fit: cover;
         }
-        .swiper-button-next{
+        .swiper-button-next {
             right: 0px;
         }
-        .swiper-button-prev{
+        .swiper-button-prev {
             left: 0px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .work {
+        padding: 8.333vw 0;
+        // .work__wrapper
+
+        &__wrapper {
+            h2 {
+                margin-bottom: 8.333vw;
+            }
+        }
+
+        // .work__slider
+
+        &__slider {
+            max-width: 100%;
+            .swiper {
+                width: 70%;
+            }
+
+            .swiper-slide {
+                font-size: 4.444vw;
+            }
         }
     }
 }

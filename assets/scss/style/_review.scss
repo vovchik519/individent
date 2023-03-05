@@ -16,15 +16,20 @@
         column-gap: 30px;
         margin-bottom: 150px;
         .review__slider-wrap {
-            width: 500px;
+            width: 47%;
         }
         .swiper {
-            width: 362px;
+            width: 75%;
             height: 682px;
+        }
+        .swiper-slide {
+            img {
+                width: 100%;
+            }
         }
     }
     &__slider-three {
-        width: 950px;
+        width: 87%;
     }
     .review__slider-wrap {
         position: relative;
@@ -53,7 +58,7 @@
             border-radius: 50%;
         }
     }
-    
+
     // .review__slide-title-name
 
     &__slide-title-name {
@@ -66,6 +71,77 @@
             height: 37px;
             object-fit: 100%;
             border-radius: 0;
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .review {
+        &__slider-image {
+            .swiper {
+                height: 70vw;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .review {
+        padding: 8.333vw 0;
+        // .review__wrapper
+
+        &__wrapper {
+            h2 {
+                margin-bottom: 8.333vw;
+            }
+        }
+
+        // .review__slider-image
+
+        &__slider-image {
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 10vw 0;
+            margin-bottom: 20vw;
+            .review__slider-wrap {
+                width: 100%;
+            }
+            .swiper {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &__slider-text {
+            padding-bottom: 10%;
+        }
+        &__slider-three {
+            width: 90%;
+        }
+        .slider-button-next-three,
+        .slider-button-prev-three {
+            top: 110%;
+        }
+        // .review__slide-title
+        .swiper-slide {
+            p {
+                font-size: 4.444vw;
+            }
+        }
+        &__slide-title {
+            column-gap: 2.778vw;
+            margin-bottom: 4.167vw;
+            img {
+                width: 15vw;
+                height: 15vw;
+            }
+        }
+
+        // .review__slide-title-name
+
+        &__slide-title-name {
+            img {
+                max-width: 100%;
+                width: 90%;
+                height: auto;
+            }
         }
     }
 }
