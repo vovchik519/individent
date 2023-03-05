@@ -96,16 +96,9 @@ h3 {
     width: 100%;
     margin: 0 auto;
 }
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
 .header {
-    flex: 0 0 auto;
 }
 .main {
-    flex: 1 0 auto;
     background: rgb(233, 250, 255);
     background: linear-gradient(
         180deg,
@@ -116,7 +109,6 @@ h3 {
     z-index: -2;
 }
 .footer {
-    flex: 0 0 auto;
     background-color: #e9faff;
 }
 .button {

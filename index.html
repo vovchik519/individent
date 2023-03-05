@@ -16,806 +16,811 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <header class="header">
-            <div class="container">
-                <div class="header__wrapper">
-                    <a href="#home">
-                        <img src="./assets/image/logo.png" alt="Логотип - Individent clinic" class="header__logo"
-                            loading="eager">
-                    </a>
-                    <nav class="header__menu">
-                        <ul class="header__list">
-                            <li class="header__item close-menu header__item-abult"><a href="#services"
-                                    data-text="Услуги взрослым">Услуги
-                                    взрослым</a>
-                            </li>
-                            <li class="header__item close-menu header__item-small"><a href="#services"
-                                    data-text="Услуги детям">Услуги детям</a>
-                            </li>
-                            <li class="header__item close-menu"><a href="#work" data-text="Наши работы">Наши работы</a>
-                            </li>
-                            <li class="header__item close-menu"><a href="#action" data-text="Акции">Акции</a></li>
-                            <li class="header__item close-menu"><a href="#price" data-text="Цены">Цены</a></li>
-                            <li class="header__item close-menu"><a href="#contact" data-text="Контакты">Контакты</a>
-                            </li>
-                        </ul>
-                        <div class="header__entry header__entry-mobile">
-                            <a class="close-menu" href="tel:+77761029766 ">+7 776 102 9766</a>
-                            <button type="button" class="button close-menu">Записаться на прием</button>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="#home">
+                    <img src="./assets/image/logo.png" alt="Логотип - Individent clinic" class="header__logo"
+                        loading="eager">
+                </a>
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <li class="header__item close-menu header__item-abult"><a href="#services"
+                                data-text="Услуги взрослым">Услуги
+                                взрослым</a>
+                        </li>
+                        <li class="header__item close-menu header__item-small"><a href="#services"
+                                data-text="Услуги детям">Услуги детям</a>
+                        </li>
+                        <li class="header__item close-menu"><a href="#work" data-text="Наши работы">Наши работы</a>
+                        </li>
+                        <li class="header__item close-menu"><a href="#action" data-text="Акции">Акции</a></li>
+                        <li class="header__item close-menu"><a href="#price" data-text="Цены">Цены</a></li>
+                        <li class="header__item close-menu"><a href="#contact" data-text="Контакты">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="header__entry header__entry-mobile">
+                        <a class="close-menu" href="tel:+77761029766 ">+7 776 102 9766</a>
+                        <button type="button" class="button close-menu">Записаться на прием</button>
+                    </div>
+                </nav>
+                <div class="header__right">
+                    <div class="header__contact">
+                        <div class="header__address">
+                            <button type="button" onclick="toggleAddress()" class="header__icon icon-mark"
+                                aria-label="Наш адресс"></button>
+                            <address class="header__popup" id="address" style="display:none;">
+                                <p>г. Алматы, ул. Шагабутдинова 132</p>
+                            </address>
                         </div>
-                    </nav>
-                    <div class="header__right">
-                        <div class="header__contact">
-                            <div class="header__address">
-                                <button type="button" onclick="toggleAddress()" class="header__icon icon-mark"
-                                    aria-label="Наш адресс"></button>
-                                <address class="header__popup" id="address" style="display:none;">
-                                    <p>г. Алматы, ул. Шагабутдинова 132</p>
-                                </address>
+                        <div class="header__phone">
+                            <button type="button" onclick="togglePhone()" class="header__icon icon-phone"
+                                aria-label="Наш адресс"></button>
+                            <div class="header__popup" id="phone" style="display:none;">
+                                <a href="tel:+77477358552" title="Наш телефон">+7 747 735 8552</a>
+                                <a href="tel:+77471805020" title="Наш телефон">+7 747 180 5020</a>
                             </div>
-                            <div class="header__phone">
-                                <button type="button" onclick="togglePhone()" class="header__icon icon-phone"
-                                    aria-label="Наш адресс"></button>
-                                <div class="header__popup" id="phone" style="display:none;">
-                                    <a href="tel:+77477358552" title="Наш телефон">+7 747 735 8552</a>
-                                    <a href="tel:+77471805020" title="Наш телефон">+7 747 180 5020</a>
+                        </div>
+                    </div>
+                    <div class="header__entry">
+                        <a href="tel:+77761029766">+7 776 102 9766</a>
+                        <button type="button" class="button">Записаться на прием</button>
+                    </div>
+                    <button type="button" class="menu__burger" aria-label="Меню" aria-expanded="false">
+                        <svg viewBox="0 0 100 100">
+                            <path class="line line1"
+                                d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                            <path class="line line2" d="M 20,50 H 80" />
+                            <path class="line line3"
+                                d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section id="home" class="firstscreen">
+            <div class="container">
+                <div class="firstscreen__wrapper">
+                    <div class="firstscreen__info">
+                        <div class="swiper firstscreen__swiper-info">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <h1>Наша цель - стремление к<br><span class="text-fill"
+                                            data-text="совершенной улыбке">совершенной
+                                            улыбке</span></h1>
+                                    <p>По статистике лишь 40% людей от природы имеют идеальную улыбку. Наша задача
+                                        помочь вам
+                                        достичь
+                                        совершенства.</p>
+                                    <p>Мы оказываем полный спектр услуг, влияющих не только на улыбку, но и на
+                                        здоровье.</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h1>Наша цель - стремление к<br><span class="text-fill"
+                                            data-text="совершенной улыбке">совершенной
+                                            улыбке</span></h1>
+                                    <p>По статистике лишь 40% людей от природы имеют идеальную улыбку. Наша задача
+                                        помочь вам
+                                        достичь
+                                        совершенства.</p>
+                                    <p>Мы оказываем полный спектр услуг, влияющих не только на улыбку, но и на
+                                        здоровье.</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h1>Наша цель - стремление к<br><span class="text-fill"
+                                            data-text="совершенной улыбке">совершенной
+                                            улыбке</span></h1>
+                                    <p>По статистике лишь 40% людей от природы имеют идеальную улыбку. Наша задача
+                                        помочь вам
+                                        достичь
+                                        совершенства.</p>
+                                    <p>Мы оказываем полный спектр услуг, влияющих не только на улыбку, но и на
+                                        здоровье.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="header__entry">
-                            <a href="tel:+77761029766">+7 776 102 9766</a>
-                            <button type="button" class="button">Записаться на прием</button>
+                        <button type="button" class="button">Записаться на бесплатную консультацию</button>
+                    </div>
+                    <div class="firstscreen__slider">
+                        <div class="swiper firstscreen__swiper-image">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="./assets/image/firstscreen/slider-1.png"
+                                        alt="женщина с красивой улыбкой" loading="eager"></div>
+                                <div class="swiper-slide"><img src="./assets/image/firstscreen/slider-1.png"
+                                        alt="девушка смотрит в сторону улыбаясь" loading="lazy"></div>
+                                <div class="swiper-slide"><img src="./assets/image/firstscreen/slider-1.png"
+                                        alt="девушка в желтой одежде улыбается смотря в сторону" loading="lazy">
+                                </div>
+                            </div>
                         </div>
-                        <button type="button" class="menu__burger" aria-label="Меню" aria-expanded="false">
-                            <svg viewBox="0 0 100 100">
-                                <path class="line line1"
-                                    d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-                                <path class="line line2" d="M 20,50 H 80" />
-                                <path class="line line3"
-                                    d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
-                            </svg>
-                        </button>
+                        <button type="button" class="swiper-button-next firstscreen-button-next"
+                            aria-label="Слайдер далее"></button>
+                        <button type="button" class="swiper-button-prev firstscreen-button-prev"
+                            aria-label="Слайдер назад"></button>
                     </div>
                 </div>
             </div>
-        </header>
-        <main class="main">
-            <section id="home" class="firstscreen">
+        </section>
+        <div class="icons__wrapper">
+            <section class="steps">
                 <div class="container">
-                    <div class="firstscreen__wrapper">
-                        <div class="firstscreen__info">
-                            <div class="swiper firstscreen__swiper-info">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <h1>Наша цель - стремление к<br><span class="text-fill"
-                                                data-text="совершенной улыбке">совершенной
-                                                улыбке</span></h1>
-                                        <p>По статистике лишь 40% людей от природы имеют идеальную улыбку. Наша задача
-                                            помочь вам
-                                            достичь
-                                            совершенства.</p>
-                                        <p>Мы оказываем полный спектр услуг, влияющих не только на улыбку, но и на
-                                            здоровье.</p>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <h1>Наша цель - стремление к<br><span class="text-fill"
-                                                data-text="совершенной улыбке">совершенной
-                                                улыбке</span></h1>
-                                        <p>По статистике лишь 40% людей от природы имеют идеальную улыбку. Наша задача
-                                            помочь вам
-                                            достичь
-                                            совершенства.</p>
-                                        <p>Мы оказываем полный спектр услуг, влияющих не только на улыбку, но и на
-                                            здоровье.</p>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <h1>Наша цель - стремление к<br><span class="text-fill"
-                                                data-text="совершенной улыбке">совершенной
-                                                улыбке</span></h1>
-                                        <p>По статистике лишь 40% людей от природы имеют идеальную улыбку. Наша задача
-                                            помочь вам
-                                            достичь
-                                            совершенства.</p>
-                                        <p>Мы оказываем полный спектр услуг, влияющих не только на улыбку, но и на
-                                            здоровье.</p>
-                                    </div>
+                    <h2>Почему стоит выбрать <span data-text="нашу стоматологию" class="text-fill">нашу
+                            стоматологию</span></h2>
+                    <div class="steps__wrapper">
+                        <ul class="steps__list">
+                            <li class="steps__item">
+                                <div class="steps__title"><img src="./assets/image/steps/icon-1.png" alt="1">
+                                    <h3>Развиваем наш сервис для вашего комфорта</h3>
                                 </div>
-                            </div>
-                            <button type="button" class="button">Записаться на бесплатную консультацию</button>
-                        </div>
-                        <div class="firstscreen__slider">
-                            <div class="swiper firstscreen__swiper-image">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide"><img src="./assets/image/firstscreen/slider-1.png"
-                                            alt="женщина с красивой улыбкой" loading="eager"></div>
-                                    <div class="swiper-slide"><img src="./assets/image/firstscreen/slider-1.png"
-                                            alt="девушка смотрит в сторону улыбаясь" loading="lazy"></div>
-                                    <div class="swiper-slide"><img src="./assets/image/firstscreen/slider-1.png"
-                                            alt="девушка в желтой одежде улыбается смотря в сторону" loading="lazy">
-                                    </div>
+                                <p>Перед приемом мы обговариваем с пациентом все нюансы процедуры, чтобы исключить
+                                    все
+                                    страхи, связанные с посещением
+                                    кабинета. У доктора клиент располагается в мягком кожаном кресле и при
+                                    необходимости
+                                    получает анестезию. Наши опытные
+                                    врачи понимают, что у всех разный порог боли и тем более степень дентофобии,
+                                    поэтому
+                                    ищем подход даже к самым маленьким
+                                    пациентам.</p>
+                            </li>
+                            <li class="steps__item">
+                                <div class="steps__title"><img src="./assets/image/steps/icon-2.png" alt="1">
+                                    <h3>В ногу со временем</h3>
                                 </div>
-                            </div>
-                            <button type="button" class="swiper-button-next firstscreen-button-next"
-                                aria-label="Слайдер далее"></button>
-                            <button type="button" class="swiper-button-prev firstscreen-button-prev"
-                                aria-label="Слайдер назад"></button>
+                                <p>Вся клиника оснащена современным оборудованием, позволяющим оперативно проводить
+                                    все
+                                    виды
+                                    манипуляций с минимальным
+                                    дискомфортом для клиентов. При работе мы также используем CAD/CAM-системы,
+                                    имплантаты
+                                    Straumann, AIRFLOW Prophylaxis
+                                    Master, отбеливание ZOOM. Это позволяет давать нам гарантии на наши работы до 3
+                                    лет.
+                                </p>
+                            </li>
+                            <li class="steps__item">
+                                <div class="steps__title"><img src="./assets/image/steps/icon-3.png" alt="1">
+                                    <h3>Напомним вам о ваших зубах</h3>
+                                </div>
+                                <p>Каждому клиенту, обратившемуся в нашу клинику мы назначаем куратора лечения. Это
+                                    ваш
+                                    персональный лечащий врач, он не только будет отслеживать состояние ваших зубов,
+                                    но
+                                    и
+                                    будет сразу назначать периодичность посещений и рассчитает бюджет на услуги и
+                                    даже
+                                    напомнит о том, что нужно посетить клинику. С нами вы всегда будете вовремя
+                                    проходить
+                                    плановые процедуры и держать зубы здоровыми.</p>
+                            </li>
+                        </ul>
+                        <div class="steps__image">
+                            <img src="./assets/image/steps/image-1.jpg" alt="аппарат для снимка ренгена зубов"
+                                width="560" height="396">
+                            <img src="./assets/image/steps/image-2.jpg" alt="приятный персонал" width="560"
+                                height="302">
                         </div>
                     </div>
                 </div>
             </section>
-            <div class="icons__wrapper">
-                <section class="steps">
-                    <div class="container">
-                        <h2>Почему стоит выбрать <span data-text="нашу стоматологию" class="text-fill">нашу
-                                стоматологию</span></h2>
-                        <div class="steps__wrapper">
-                            <ul class="steps__list">
-                                <li class="steps__item">
-                                    <div class="steps__title"><img src="./assets/image/steps/icon-1.png" alt="1">
-                                        <h3>Развиваем наш сервис для вашего комфорта</h3>
-                                    </div>
-                                    <p>Перед приемом мы обговариваем с пациентом все нюансы процедуры, чтобы исключить
-                                        все
-                                        страхи, связанные с посещением
-                                        кабинета. У доктора клиент располагается в мягком кожаном кресле и при
-                                        необходимости
-                                        получает анестезию. Наши опытные
-                                        врачи понимают, что у всех разный порог боли и тем более степень дентофобии,
-                                        поэтому
-                                        ищем подход даже к самым маленьким
-                                        пациентам.</p>
-                                </li>
-                                <li class="steps__item">
-                                    <div class="steps__title"><img src="./assets/image/steps/icon-2.png" alt="1">
-                                        <h3>В ногу со временем</h3>
-                                    </div>
-                                    <p>Вся клиника оснащена современным оборудованием, позволяющим оперативно проводить
-                                        все
-                                        виды
-                                        манипуляций с минимальным
-                                        дискомфортом для клиентов. При работе мы также используем CAD/CAM-системы,
-                                        имплантаты
-                                        Straumann, AIRFLOW Prophylaxis
-                                        Master, отбеливание ZOOM. Это позволяет давать нам гарантии на наши работы до 3
-                                        лет.
-                                    </p>
-                                </li>
-                                <li class="steps__item">
-                                    <div class="steps__title"><img src="./assets/image/steps/icon-3.png" alt="1">
-                                        <h3>Напомним вам о ваших зубах</h3>
-                                    </div>
-                                    <p>Каждому клиенту, обратившемуся в нашу клинику мы назначаем куратора лечения. Это
-                                        ваш
-                                        персональный лечащий врач, он не только будет отслеживать состояние ваших зубов,
-                                        но
-                                        и
-                                        будет сразу назначать периодичность посещений и рассчитает бюджет на услуги и
-                                        даже
-                                        напомнит о том, что нужно посетить клинику. С нами вы всегда будете вовремя
-                                        проходить
-                                        плановые процедуры и держать зубы здоровыми.</p>
-                                </li>
-                            </ul>
-                            <div class="steps__image">
-                                <img src="./assets/image/steps/image-1.jpg" alt="аппарат для снимка ренгена зубов"
-                                    width="560" height="396">
-                                <img src="./assets/image/steps/image-2.jpg" alt="приятный персонал" width="560"
-                                    height="302">
+            <section class="about">
+                <div class="container">
+                    <div class="about__wrapper">
+                        <div class="about__title">
+                            <h2>
+                                <img src="./assets/image/about/invisalign-logo.png" alt="логотип invisalign"
+                                    class="about__logo">
+                            </h2>
+                            <p class="about__suptext">В нашей клинике вы можете получить лечение Зубов челюстной
+                                аномалии не только с помощью
+                                брекетов
+                                но и Элайнерами</p>
+                            <p class="about__subtext">
+                                <span class="text-fill" data-text="ЦЕНА В ЧЕСТЬ ОТКРЫТИЯ">ЦЕНА В ЧЕСТЬ
+                                    ОТКРЫТИЯ</span>
+                                <span class="green">4000$</span>
+                                <s>ВМЕСТО <span class="red">4500$</span></s>
+                            </p>
+                        </div>
+                        <ul class="about__list">
+                            <li class="about__item">
+                                <img src="./assets/image/about/flower.png" alt="цветок">
+                                Invisalign — это инновационные системы, которые представляют собой прозрачные капы
+                                для
+                                исправления прикуса.
+                                Данные системы подходят тем пациентам, которые намерены осуществить коррекцию
+                                прикуса и
+                                сохранить эстетичность улыбки.
+                            </li>
+                            <li class="about__item">
+                                <img src="./assets/image/about/flower.png" alt="цветок">
+                                Набор Invisalign будет состоять для Вас из серии индивидуальных съёмных элайнеров,
+                                которые почти незаметны на зубах.
+                                Капы нужно менять 1 раз в 2 недели. За этот срок элайнеры выполняют перемещение
+                                зубов до
+                                рассчитанного положения, после
+                                чего пациент переходит на следующую пару элайнеров.
+                            </li>
+                            <li class="about__item">
+                                <img src="./assets/image/about/flower.png" alt="цветок">
+                                После составления виртуального плана лечения Ваш врач покажет направление движения
+                                Ваших
+                                зубов в процессе лечения, что
+                                даст возможность увидеть конечный результат еще до начала лечения. Элайнеры
+                                изготавливаются индивидуально для Вас по
+                                составленному плану лечения.
+                            </li>
+                        </ul>
+                        <button type="button" class="button">Записаться на бесплатную консультацию</button>
+                    </div>
+                </div>
+            </section>
+            <section id="services" class="services">
+                <div class="container">
+                    <div class="services__wrapper">
+                        <h2><span class="text-fill" data-text="Услуги">Услуги</span>нашей стоматологии</h2>
+                        <div class="services__tabs-wrapper">
+                            <div class="services__tabs-btn">
+                                <button type="button" class="services__tabs-links service__tabs-links-abult active"
+                                    onclick="openTab(event, 'abult')">Услуги взрослым</button>
+                                <button type="button" class="services__tabs-links service__tabs-links-small"
+                                    onclick="openTab(event, 'small')">Услуги
+                                    детям</button>
+                            </div>
+                            <div class="services__tabs-wrap">
+                                <div class="services__tabs" id="abult">
+                                    <ul class="services__list">
+                                        <li class="services__item">
+                                            <div class="services__tabs-title">
+                                                <img src="./assets/image/services/icon-1.png" alt="">
+                                                <h3>Лечение</h3>
+                                            </div>
+                                            <p>Работаем со всеми видами кариеса, устраняем пульпит, пародонтит и
+                                                корневых
+                                                каналов без боли</p>
+                                        </li>
+                                        <li class="services__item">
+                                            <div class="services__tabs-title">
+                                                <img src="./assets/image/services/icon-2.png" alt="">
+                                                <h3>Удаление</h3>
+                                            </div>
+                                            <p>
+                                                Удаление коренных зубов
+                                                и зубов мудрости по показаниям хирурга</p>
+                                        </li>
+                                        <li class="services__item">
+                                            <div class="services__tabs-title">
+                                                <img src="./assets/image/services/icon-3.png" alt="">
+                                                <h3>Отбеливание</h3>
+                                            </div>
+                                            <p>Отбеливание до естественного цвета зубов при помощи Philips ZOOM</p>
+                                        </li>
+                                        <li class="services__item">
+                                            <div class="services__tabs-title">
+                                                <img src="./assets/image/services/icon-4.png" alt="">
+                                                <h3>Эстетическая стоматология</h3>
+                                            </div>
+                                            <p>Установка виниров, реставрация зубов и избавление от межзубной щели
+                                            </p>
+                                        </li>
+                                        <li class="services__item">
+                                            <div class="services__tabs-title">
+                                                <img src="./assets/image/services/icon-5.png" alt="">
+                                                <h3>Ортодонтия</h3>
+                                            </div>
+                                            <p>Исправление прикуса при помощи брекет систем</p>
+                                        </li>
+                                        <li class="services__item">
+                                            <div class="services__tabs-title">
+                                                <img src="./assets/image/services/icon-6.png" alt="">
+                                                <h3>Лазерная
+                                                    стоматология
+                                                </h3>
+                                            </div>
+                                            <p>Проводим пластику уздечки языка и губ под наркозом</p>
+                                        </li>
+                                        <li class="services__item">
+                                            <div class="services__tabs-title">
+                                                <img src="./assets/image/services/icon-7.png" alt="">
+                                                <h3>Протезирование</h3>
+                                            </div>
+                                            <p>Установка коронок и съемных протезов для восстановления жевательной
+                                                функции
+                                            </p>
+                                        </li>
+                                        <li class="services__item">
+                                            <div class="services__tabs-title">
+                                                <img src="./assets/image/services/icon-8.png" alt="">
+                                                <h3>Имплантация</h3>
+                                            </div>
+                                            <p>Установка имплантов на место поврежденных зубов</p>
+                                        </li>
+                                    </ul>
+                                    <button type="button" class="button">Записаться на прием</button>
+                                </div>
+                                <div class="services__tabs" id="small" style="display:none;">
+                                    <ul class="services__list">
+                                        <li class="services__item">
+                                            <div class="services__tabs-title">
+                                                <img src="./assets/image/services/icon-2.png" alt="">
+                                                <h3>Удаление</h3>
+                                            </div>
+                                            <p>
+                                                Удаление коренных зубов
+                                                и зубов мудрости по показаниям хирурга</p>
+                                        </li>
+                                        <li class="services__item">
+                                            <div class="services__tabs-title">
+                                                <img src="./assets/image/services/icon-1.png" alt="">
+                                                <h3>Лечение</h3>
+                                            </div>
+                                            <p>Работаем со всеми видами кариеса, устраняем пульпит, пародонтит и
+                                                корневых
+                                                каналов без боли</p>
+                                        </li>
+                                        <li class="services__item">
+                                            <div class="services__tabs-title">
+                                                <img src="./assets/image/services/icon-4.png" alt="">
+                                                <h3>Эстетическая стоматология</h3>
+                                            </div>
+                                            <p>Установка виниров, реставрация зубов и избавление от межзубной щели
+                                            </p>
+                                        </li>
+                                        <li class="services__item">
+                                            <div class="services__tabs-title">
+                                                <img src="./assets/image/services/icon-3.png" alt="">
+                                                <h3>Отбеливание</h3>
+                                            </div>
+                                            <p>Отбеливание до естественного цвета зубов при помощи Philips ZOOM</p>
+                                        </li>
+                                        <li class="services__item">
+                                            <div class="services__tabs-title">
+                                                <img src="./assets/image/services/icon-7.png" alt="">
+                                                <h3>Протезирование</h3>
+                                            </div>
+                                            <p>Установка коронок и съемных протезов для восстановления жевательной
+                                                функции
+                                            </p>
+                                        </li>
+                                        <li class="services__item">
+                                            <div class="services__tabs-title">
+                                                <img src="./assets/image/services/icon-5.png" alt="">
+                                                <h3>Ортодонтия</h3>
+                                            </div>
+                                            <p>Исправление прикуса при помощи брекет систем</p>
+                                        </li>
+                                        <li class="services__item">
+                                            <div class="services__tabs-title">
+                                                <img src="./assets/image/services/icon-8.png" alt="">
+                                                <h3>Имплантация</h3>
+                                            </div>
+                                            <p>Установка имплантов на место поврежденных зубов</p>
+                                        </li>
+                                        <li class="services__item">
+                                            <div class="services__tabs-title">
+                                                <img src="./assets/image/services/icon-6.png" alt="">
+                                                <h3>Лазерная
+                                                    стоматология
+                                                </h3>
+                                            </div>
+                                            <p>Проводим пластику уздечки языка и губ под наркозом</p>
+                                        </li>
+                                    </ul>
+                                    <button type="button" class="button">Записаться на прием</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </section>
-                <section class="about">
-                    <div class="container">
-                        <div class="about__wrapper">
-                            <div class="about__title">
-                                <h2>
-                                    <img src="./assets/image/about/invisalign-logo.png" alt="логотип invisalign"
-                                        class="about__logo">
-                                </h2>
-                                <p class="about__suptext">В нашей клинике вы можете получить лечение Зубов челюстной
-                                    аномалии не только с помощью
-                                    брекетов
-                                    но и Элайнерами</p>
-                                <p class="about__subtext">
-                                    <span class="text-fill" data-text="ЦЕНА В ЧЕСТЬ ОТКРЫТИЯ">ЦЕНА В ЧЕСТЬ
-                                        ОТКРЫТИЯ</span>
-                                    <span class="green">4000$</span>
-                                    <s>ВМЕСТО <span class="red">4500$</span></s>
+                </div>
+            </section>
+            <section class="advantage" id="advantage">
+                <div class="container">
+                    <div class="advantage__wrapper">
+                        <h2>Наши <span data-text="преимущества" class="text-fill">преимущества</span></h2>
+                        <ul class="advantage__list">
+                            <li class="advantage__item">
+                                <div class="advantage__title">
+                                    <p><span>1</span></p>
+                                    <h3>КАЧЕСТВЕННЫЕ МАТЕРИАЛЫ</h3>
+                                </div>
+                                <p>
+                                    Используем профессиональные материалы для стоматологических работ. Заказываем
+                                    все расходники от ведущих мировых
+                                    производителей, таких как США, Япония, Швейцария. Все они прошли клинические
+                                    исследования и абсолютно безопасны для
+                                    использования.</p>
+                            </li>
+                            <li class="advantage__item">
+                                <div class="advantage__title">
+                                    <p><span>2</span></p>
+                                    <h3>
+                                        БЕЗБОЛЕЗНЕННОЕ ЛЕЧЕНИЕ
+                                    </h3>
+                                </div>
+                                <p>Используем профессиональные материалы для стоматологических работ. Заказываем все
+                                    расходники от ведущих мировых производителей, таких как США, Япония, Швейцария.
+                                    Все они прошли клинические исследования и абсолютно безопасны для использования.
                                 </p>
-                            </div>
-                            <ul class="about__list">
-                                <li class="about__item">
-                                    <img src="./assets/image/about/flower.png" alt="цветок">
-                                    Invisalign — это инновационные системы, которые представляют собой прозрачные капы
-                                    для
-                                    исправления прикуса.
-                                    Данные системы подходят тем пациентам, которые намерены осуществить коррекцию
-                                    прикуса и
-                                    сохранить эстетичность улыбки.
-                                </li>
-                                <li class="about__item">
-                                    <img src="./assets/image/about/flower.png" alt="цветок">
-                                    Набор Invisalign будет состоять для Вас из серии индивидуальных съёмных элайнеров,
-                                    которые почти незаметны на зубах.
-                                    Капы нужно менять 1 раз в 2 недели. За этот срок элайнеры выполняют перемещение
-                                    зубов до
-                                    рассчитанного положения, после
-                                    чего пациент переходит на следующую пару элайнеров.
-                                </li>
-                                <li class="about__item">
-                                    <img src="./assets/image/about/flower.png" alt="цветок">
-                                    После составления виртуального плана лечения Ваш врач покажет направление движения
-                                    Ваших
-                                    зубов в процессе лечения, что
-                                    даст возможность увидеть конечный результат еще до начала лечения. Элайнеры
-                                    изготавливаются индивидуально для Вас по
-                                    составленному плану лечения.
-                                </li>
-                            </ul>
-                            <button type="button" class="button">Записаться на бесплатную консультацию</button>
-                        </div>
-                    </div>
-                </section>
-                <section id="services" class="services">
-                    <div class="container">
-                        <div class="services__wrapper">
-                            <h2><span class="text-fill" data-text="Услуги">Услуги</span>нашей стоматологии</h2>
-                            <div class="services__tabs-wrapper">
-                                <div class="services__tabs-btn">
-                                    <button type="button" class="services__tabs-links service__tabs-links-abult active"
-                                        onclick="openTab(event, 'abult')">Услуги взрослым</button>
-                                    <button type="button" class="services__tabs-links service__tabs-links-small"
-                                        onclick="openTab(event, 'small')">Услуги
-                                        детям</button>
+                            </li>
+                            <li class="advantage__item">
+                                <div class="advantage__title">
+                                    <p><span>3</span></p>
+                                    <h3>
+                                        ВЫСОКОКВАЛИФИ-ЦИРОВАННЫЕ ВРАЧИ
+                                    </h3>
                                 </div>
-                                <div class="services__tabs-wrap">
-                                    <div class="services__tabs" id="abult">
-                                        <ul class="services__list">
-                                            <li class="services__item">
-                                                <div class="services__tabs-title">
-                                                    <img src="./assets/image/services/icon-1.png" alt="">
-                                                    <h3>Лечение</h3>
-                                                </div>
-                                                <p>Работаем со всеми видами кариеса, устраняем пульпит, пародонтит и
-                                                    корневых
-                                                    каналов без боли</p>
-                                            </li>
-                                            <li class="services__item">
-                                                <div class="services__tabs-title">
-                                                    <img src="./assets/image/services/icon-2.png" alt="">
-                                                    <h3>Удаление</h3>
-                                                </div>
-                                                <p>
-                                                    Удаление коренных зубов
-                                                    и зубов мудрости по показаниям хирурга</p>
-                                            </li>
-                                            <li class="services__item">
-                                                <div class="services__tabs-title">
-                                                    <img src="./assets/image/services/icon-3.png" alt="">
-                                                    <h3>Отбеливание</h3>
-                                                </div>
-                                                <p>Отбеливание до естественного цвета зубов при помощи Philips ZOOM</p>
-                                            </li>
-                                            <li class="services__item">
-                                                <div class="services__tabs-title">
-                                                    <img src="./assets/image/services/icon-4.png" alt="">
-                                                    <h3>Эстетическая стоматология</h3>
-                                                </div>
-                                                <p>Установка виниров, реставрация зубов и избавление от межзубной щели
-                                                </p>
-                                            </li>
-                                            <li class="services__item">
-                                                <div class="services__tabs-title">
-                                                    <img src="./assets/image/services/icon-5.png" alt="">
-                                                    <h3>Ортодонтия</h3>
-                                                </div>
-                                                <p>Исправление прикуса при помощи брекет систем</p>
-                                            </li>
-                                            <li class="services__item">
-                                                <div class="services__tabs-title">
-                                                    <img src="./assets/image/services/icon-6.png" alt="">
-                                                    <h3>Лазерная
-                                                        стоматология
-                                                    </h3>
-                                                </div>
-                                                <p>Проводим пластику уздечки языка и губ под наркозом</p>
-                                            </li>
-                                            <li class="services__item">
-                                                <div class="services__tabs-title">
-                                                    <img src="./assets/image/services/icon-7.png" alt="">
-                                                    <h3>Протезирование</h3>
-                                                </div>
-                                                <p>Установка коронок и съемных протезов для восстановления жевательной
-                                                    функции
-                                                </p>
-                                            </li>
-                                            <li class="services__item">
-                                                <div class="services__tabs-title">
-                                                    <img src="./assets/image/services/icon-8.png" alt="">
-                                                    <h3>Имплантация</h3>
-                                                </div>
-                                                <p>Установка имплантов на место поврежденных зубов</p>
-                                            </li>
-                                        </ul>
-                                        <button type="button" class="button">Записаться на прием</button>
-                                    </div>
-                                    <div class="services__tabs" id="small" style="display:none;">
-                                        <ul class="services__list">
-                                            <li class="services__item">
-                                                <div class="services__tabs-title">
-                                                    <img src="./assets/image/services/icon-2.png" alt="">
-                                                    <h3>Удаление</h3>
-                                                </div>
-                                                <p>
-                                                    Удаление коренных зубов
-                                                    и зубов мудрости по показаниям хирурга</p>
-                                            </li>
-                                            <li class="services__item">
-                                                <div class="services__tabs-title">
-                                                    <img src="./assets/image/services/icon-1.png" alt="">
-                                                    <h3>Лечение</h3>
-                                                </div>
-                                                <p>Работаем со всеми видами кариеса, устраняем пульпит, пародонтит и
-                                                    корневых
-                                                    каналов без боли</p>
-                                            </li>
-                                            <li class="services__item">
-                                                <div class="services__tabs-title">
-                                                    <img src="./assets/image/services/icon-4.png" alt="">
-                                                    <h3>Эстетическая стоматология</h3>
-                                                </div>
-                                                <p>Установка виниров, реставрация зубов и избавление от межзубной щели
-                                                </p>
-                                            </li>
-                                            <li class="services__item">
-                                                <div class="services__tabs-title">
-                                                    <img src="./assets/image/services/icon-3.png" alt="">
-                                                    <h3>Отбеливание</h3>
-                                                </div>
-                                                <p>Отбеливание до естественного цвета зубов при помощи Philips ZOOM</p>
-                                            </li>
-                                            <li class="services__item">
-                                                <div class="services__tabs-title">
-                                                    <img src="./assets/image/services/icon-7.png" alt="">
-                                                    <h3>Протезирование</h3>
-                                                </div>
-                                                <p>Установка коронок и съемных протезов для восстановления жевательной
-                                                    функции
-                                                </p>
-                                            </li>
-                                            <li class="services__item">
-                                                <div class="services__tabs-title">
-                                                    <img src="./assets/image/services/icon-5.png" alt="">
-                                                    <h3>Ортодонтия</h3>
-                                                </div>
-                                                <p>Исправление прикуса при помощи брекет систем</p>
-                                            </li>
-                                            <li class="services__item">
-                                                <div class="services__tabs-title">
-                                                    <img src="./assets/image/services/icon-8.png" alt="">
-                                                    <h3>Имплантация</h3>
-                                                </div>
-                                                <p>Установка имплантов на место поврежденных зубов</p>
-                                            </li>
-                                            <li class="services__item">
-                                                <div class="services__tabs-title">
-                                                    <img src="./assets/image/services/icon-6.png" alt="">
-                                                    <h3>Лазерная
-                                                        стоматология
-                                                    </h3>
-                                                </div>
-                                                <p>Проводим пластику уздечки языка и губ под наркозом</p>
-                                            </li>
-                                        </ul>
-                                        <button type="button" class="button">Записаться на прием</button>
-                                    </div>
+                                <p>Используем профессиональные материалы для стоматологических работ. Заказываем все
+                                    расходники от ведущих мировых производителей, таких как США, Япония, Швейцария.
+                                    Все они прошли клинические исследования и абсолютно безопасны для использования.
+                                </p>
+                            </li>
+                            <li class="advantage__item">
+                                <div class="advantage__title">
+                                    <p><span>4</span></p>
+                                    <h3>
+                                        ИННОВАЦИОННОЕ ОБОРУДОВАНИЕ
+                                    </h3>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="advantage" id="advantage">
-                    <div class="container">
-                        <div class="advantage__wrapper">
-                            <h2>Наши <span data-text="преимущества" class="text-fill">преимущества</span></h2>
-                            <ul class="advantage__list">
-                                <li class="advantage__item">
-                                    <div class="advantage__title">
-                                        <p><span>1</span></p>
-                                        <h3>КАЧЕСТВЕННЫЕ МАТЕРИАЛЫ</h3>
-                                    </div>
-                                    <p>
-                                        Используем профессиональные материалы для стоматологических работ. Заказываем
-                                        все расходники от ведущих мировых
-                                        производителей, таких как США, Япония, Швейцария. Все они прошли клинические
-                                        исследования и абсолютно безопасны для
-                                        использования.</p>
-                                </li>
-                                <li class="advantage__item">
-                                    <div class="advantage__title">
-                                        <p><span>2</span></p>
-                                        <h3>
-                                            БЕЗБОЛЕЗНЕННОЕ ЛЕЧЕНИЕ
-                                        </h3>
-                                    </div>
-                                    <p>Используем профессиональные материалы для стоматологических работ. Заказываем все
-                                        расходники от ведущих мировых производителей, таких как США, Япония, Швейцария.
-                                        Все они прошли клинические исследования и абсолютно безопасны для использования.
-                                    </p>
-                                </li>
-                                <li class="advantage__item">
-                                    <div class="advantage__title">
-                                        <p><span>3</span></p>
-                                        <h3>
-                                            ВЫСОКОКВАЛИФИ-ЦИРОВАННЫЕ ВРАЧИ
-                                        </h3>
-                                    </div>
-                                    <p>Используем профессиональные материалы для стоматологических работ. Заказываем все
-                                        расходники от ведущих мировых производителей, таких как США, Япония, Швейцария.
-                                        Все они прошли клинические исследования и абсолютно безопасны для использования.
-                                    </p>
-                                </li>
-                                <li class="advantage__item">
-                                    <div class="advantage__title">
-                                        <p><span>4</span></p>
-                                        <h3>
-                                            ИННОВАЦИОННОЕ ОБОРУДОВАНИЕ
-                                        </h3>
-                                    </div>
-                                    <p>Все наше оборудование прошло сертификацию и официально признано зарубежными
-                                        специалистами, поэтому полностью безопасно даже для детей и обладает высокой
-                                        скоростью и эффективностью работы.</p>
-                                </li>
-                                <li class="advantage__item">
-                                    <div class="advantage__title">
-                                        <p><span>5</span></p>
-                                        <h3>
-                                            БЕЗОПАСНОСТЬ ПАЦИЕНТОВ
-                                        </h3>
-                                    </div>
-                                    <p>Персонал клиники каждый год проходит курсы первой помощи. Мы заботимся о вашей
-                                        безопасности, поэтому в клинике предусмотрены стерильные помещения , а весь
-                                        воздух в зоне ожидания подвергается кварцеванию.</p>
-                                </li>
-                                <li class="advantage__item">
-                                    <div class="advantage__title">
-                                        <p><span>6</span></p>
-                                        <h3>
-                                            УДОБНОЕ РАСПОЛОЖЕНИЕ КЛИНИКИ
-                                        </h3>
-                                    </div>
-                                    <p>Мы располагаемся в самом центре города Алматы, до нас можно добраться на любом
-                                        удобном виде транспорта.</p>
-                                </li>
-                            </ul>
-                            <button type="button" class="button">Записаться на бесплатную консультацию</button>
-                        </div>
-                    </div>
-                </section>
-                <section class="feedback">
-                    <div class="container">
-                        <div class="feedback__wrapper">
-                            <div class="feedback__info">
-                                <h2>Приходите на прием-
-                                    осмотрим и составим план лечения<br>
-                                    <span data-text="БЕСПЛАТНО" class="text-fill">БЕСПЛАТНО</span>
-                                </h2>
-                                <form>
-                                    <fieldset>
-                                        <input type="text" placeholder="Имя" required>
-                                        <input type="tel" placeholder="+7 (777) 777 77 77" required>
-                                        <button type="submit" class="button">Записаться на прием</button>
-                                    </fieldset>
-                                </form>
-                            </div>
-                            <img class="feedback__image" src="./assets/image/feedback/image.png"
-                                alt="Сотрудники стоматологий в форме">
-                        </div>
-                    </div>
-                </section>
-                <section class="doctors">
-                    <div class="container">
-                        <h2><span data-text="Наши" class="text-fill">Наши</span> врачи</h2>
-                        <div class="doctors__wrapper">
-                            <div class="doctors__info">
-                                <p>Наша команда специалистов ежегодно повышает квалификацию, и увлечена своим делом.
-                                    Наша
-                                    цель не только сделать вас
-                                    здоровыми, но и подарить совершенную улыбку. Огромный вклад в это вносит главный
-                                    врач
-                                    Рыскулбеков Данияр Ануарулы. Он
-                                    является практикующим ортодонтом с применением практики установки ОртоИмплантатов
-                                    для
-                                    коррекции прикуса любой сложности.
-                                    На его счету свыше 15 семинаров от зарубежных лекторов и работа с самыми
-                                    современными
-                                    протоколами и материалами.
-                                    Благодаря такому багажу знаний ему даже удалось поработать с самым лучшим
-                                    стоматологом
-                                    Республики Казахстан в течение 6
-                                    лет.</p>
-                                <img src="./assets/image/doctors/image-1.jpg"
-                                    alt="Наш персонал, с инструментами в руках">
-                            </div>
-                            <div class="doctors__slider">
-                                <div class="swiper doctors__swiper">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide"><img src="./assets/image/doctors/slider-1.jpg"
-                                                alt="Имя фамилия" loading="lazy"></div>
-                                        <div class="swiper-slide"><img src="./assets/image/doctors/slider-2.jpeg"
-                                                alt="Имя фамилия" loading="lazy"></div>
-                                    </div>
+                                <p>Все наше оборудование прошло сертификацию и официально признано зарубежными
+                                    специалистами, поэтому полностью безопасно даже для детей и обладает высокой
+                                    скоростью и эффективностью работы.</p>
+                            </li>
+                            <li class="advantage__item">
+                                <div class="advantage__title">
+                                    <p><span>5</span></p>
+                                    <h3>
+                                        БЕЗОПАСНОСТЬ ПАЦИЕНТОВ
+                                    </h3>
                                 </div>
-                                <div class="swiper-button-next doctors-button-next"></div>
-                                <div class="swiper-button-prev doctors-button-prev"></div>
-                                <div class="swiper-pagination doctors-pagination"></div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="action" id="action">
-                    <div class="container">
-                        <div class="action__wrapper">
-                            <h2>Успейте воспользоваться <span data-text="акционными" class="text-fill">акционными</span>
-                                предложениями</h2>
-                            <ul class="action__list">
-                                <li class="action__item">
-                                    <p>Успейте воспользоваться скидкой <strong>35% на Американские брекеты.</strong></p>
-                                    <p>Ограниченное место на скидку брекетов
-                                        <strong>65 000 тг</strong> на одну челюсть
-                                        вместо 100 000 тг
-                                    </p>
-                                    <img src="./assets/image/action/img-1.png" alt="брекеты">
-                                </li>
-                                <li class="action__item">
-                                    <p><strong>Invisalign 4000$</strong></p>
-                                    <p>вместо 4500$</p>
-                                    <img src="./assets/image/action/img-2.png" alt="Invisalign">
-                                </li>
-                                <li class="action__item">
-                                    <p>Акция на <strong>профессиональную чистку в три этапа</strong></p>
-                                    <p><strong>11 990 тг</strong>
-                                        вместо 19 990тг</p>
-                                    <img src="./assets/image/action/img-3.png" alt="чистка зубов">
-                                </li>
-                            </ul>
-                            <ul class="action__list action__list-bottom">
-                                <li class="action__item">
-                                    <div class="action__item-info">
-                                        <p>Постоянным пациентам</p>
-                                        <p>скидка 10%</p>
-                                    </div>
-                                    <img src="./assets/image/action/img-4.png" alt="девушка">
-                                </li>
-                                <li class="action__item">
-                                    <div class="action__item-info">
-                                        <p>Отзыв на 2 Гис</p>
-                                        <p>скидка 5%</p>
-                                    </div>
-                                    <img src="./assets/image/action/img-5.png" alt="значек 2gis">
-                                </li>
-                            </ul>
-                            <button type="button" class="button">Записаться на бесплатную консультацию</button>
-                        </div>
-                    </div>
-                </section>
-                <section class="work" id="work">
-                    <div class="container">
-                        <div class="work__wrapper">
-                            <h2>Наши <span data-text="работы" class="text-fill">работы</span></h2>
-                            <div class="work__slider">
-                                <div class="swiper work__swiper">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <img src="./assets/image/work/img-1.jpg" alt="зубы" loading="lazy">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./assets/image/work/img-2.jpeg" alt="зубы" loading="lazy">
-                                        </div>
-                                    </div>
+                                <p>Персонал клиники каждый год проходит курсы первой помощи. Мы заботимся о вашей
+                                    безопасности, поэтому в клинике предусмотрены стерильные помещения , а весь
+                                    воздух в зоне ожидания подвергается кварцеванию.</p>
+                            </li>
+                            <li class="advantage__item">
+                                <div class="advantage__title">
+                                    <p><span>6</span></p>
+                                    <h3>
+                                        УДОБНОЕ РАСПОЛОЖЕНИЕ КЛИНИКИ
+                                    </h3>
                                 </div>
-                                <div class="swiper-button-next work-button-next"></div>
-                                <div class="swiper-button-prev work-button-prev"></div>
-                                <div class="swiper-pagination work-pagination"></div>
-                            </div>
-                        </div>
+                                <p>Мы располагаемся в самом центре города Алматы, до нас можно добраться на любом
+                                    удобном виде транспорта.</p>
+                            </li>
+                        </ul>
+                        <button type="button" class="button">Записаться на бесплатную консультацию</button>
                     </div>
-                </section>
-                <section class="review">
-                    <div class="container">
-                        <div class="review__wrapper">
-                            <h2><span data-text="Отзывы" class="text-fill">Отзывы</span> и благодарственные письма</h2>
-                            <div class="review__slider">
-                                <div class="review__slider-image">
-                                    <div class="review__slider-wrap">
-                                        <div class="swiper review__slider-one">
-                                            <div class="swiper-wrapper">
-                                                <div class="swiper-slide">
-                                                    <img src="./assets/image/review/reviews/slide-1.jpg" alt="отзыв"
-                                                        loading="lazy">
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img src="./assets/image/review/reviews/slide-1.jpg" alt="отзыв"
-                                                        loading="lazy">
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img src="./assets/image/review/reviews/slide-1.jpg" alt="отзыв"
-                                                        loading="lazy">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-button-next slider-button-next-one"></div>
-                                        <div class="swiper-button-prev slider-button-prev-one"></div>
-                                        <div class="swiper-pagination slider-pagination-one"></div>
-                                    </div>
-                                    <div class="review__slider-wrap">
-                                        <div class="swiper review__slider-two">
-                                            <div class="swiper-wrapper">
-                                                <div class="swiper-slide">
-                                                    <img src="./assets/image/review/letters/slide-1.jpg"
-                                                        alt="благодарственное письмо" loading="lazy">
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img src="./assets/image/review/letters/slide-1.jpg"
-                                                        alt="благодарственное письмо" loading="lazy">
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img src="./assets/image/review/letters/slide-1.jpg"
-                                                        alt="благодарственное письмо" loading="lazy">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-button-next slider-button-next-two"></div>
-                                        <div class="swiper-button-prev slider-button-prev-two"></div>
-                                        <div class="swiper-pagination slider-pagination-two"></div>
-                                    </div>
-                                </div>
-                                <div class="review__slider-text">
-                                    <div class="review__slider-wrap">
-                                        <div class="swiper review__slider-three">
-                                            <div class="swiper-wrapper">
-                                                <div class="swiper-slide">
-                                                    <div class="review__slide-title">
-                                                        <img src="./assets/image/review/text/img.png" alt="фотография">
-                                                        <div class="review__slide-title-name">
-                                                            <p>Наталья Борисова</p>
-                                                            <img src="./assets/image/review/text/star-5.png"
-                                                                alt="5 звезд">
-                                                        </div>
-                                                    </div>
-                                                    <p>Всегда очень чисто и приветливый персонал. Все готовы прийти на
-                                                        помощь, и неважно, какой врач тебя наблюдает- все врачи
-                                                        готовы помочь 24/7. Видно, что соседи вороны руководства
-                                                        проводится
-                                                        огромная работа с персоналом и политикой лояльности
-                                                        к клиентам и я это очень ценю.</p>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <div class="review__slide-title">
-                                                        <img src="./assets/image/review/text/img.png" alt="фотография">
-                                                        <div class="review__slide-title-name">
-                                                            <p>Наталья Борисова</p>
-                                                            <img src="./assets/image/review/text/star-5.png"
-                                                                alt="5 звезд">
-                                                        </div>
-                                                    </div>
-                                                    <p>Всегда очень чисто и приветливый персонал. Все готовы прийти на
-                                                        помощь, и неважно, какой врач тебя наблюдает- все врачи
-                                                        готовы помочь 24/7. Видно, что соседи вороны руководства
-                                                        проводится
-                                                        огромная работа с персоналом и политикой лояльности
-                                                        к клиентам и я это очень ценю.</p>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <div class="review__slide-title">
-                                                        <img src="./assets/image/review/text/img.png" alt="фотография">
-                                                        <div class="review__slide-title-name">
-                                                            <p>Наталья Борисова</p>
-                                                            <img src="./assets/image/review/text/star-5.png"
-                                                                alt="5 звезд">
-                                                        </div>
-                                                    </div>
-                                                    <p>Всегда очень чисто и приветливый персонал. Все готовы прийти на
-                                                        помощь, и неважно, какой врач тебя наблюдает- все врачи
-                                                        готовы помочь 24/7. Видно, что соседи вороны руководства
-                                                        проводится
-                                                        огромная работа с персоналом и политикой лояльности
-                                                        к клиентам и я это очень ценю.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-button-next slider-button-next-three"></div>
-                                        <div class="swiper-button-prev slider-button-prev-three"></div>
-                                        <div class="swiper-pagination slider-pagination-three"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <div class="icons__wrap" aria-hidden="true">
-                    <span class="icons__item"><img src="./assets/image/icons/icons-1.png" alt="icon"></span>
-                    <span class="icons__item"><img src="./assets/image/icons/icons-2.png" alt="icon"></span>
-                    <span class="icons__item"><img src="./assets/image/icons/icons-3.png" alt="icon"></span>
-                    <span class="icons__item"><img src="./assets/image/icons/icons-4.png" alt="icon"></span>
-                    <span class="icons__item"><img src="./assets/image/icons/icons-2.png" alt="icon"></span>
-                    <span class="icons__item"><img src="./assets/image/icons/icons-1.png" alt="icon"></span>
-                    <span class="icons__item"><img src="./assets/image/icons/icons-5.png" alt="icon"></span>
-                    <span class="icons__item"><img src="./assets/image/icons/icons-3.png" alt="icon"></span>
-                    <span class="icons__item"><img src="./assets/image/icons/icons-4.png" alt="icon"></span>
-                    <span class="icons__item"><img src="./assets/image/icons/icons-3.png" alt="icon"></span>
-                    <span class="icons__item"><img src="./assets/image/icons/icons-2.png" alt="icon"></span>
-                    <span class="icons__item"><img src="./assets/image/icons/icons-4.png" alt="icon"></span>
-                    <span class="icons__item"><img src="./assets/image/icons/icons-1.png" alt="icon"></span>
-                    <span class="icons__item"><img src="./assets/image/icons/icons-1.png" alt="icon"></span>
-                    <span class="icons__item"><img src="./assets/image/icons/icons-2.png" alt="icon"></span>
-                    <span class="icons__item"><img src="./assets/image/icons/icons-3.png" alt="icon"></span>
-                    <span class="icons__item"><img src="./assets/image/icons/icons-4.png" alt="icon"></span>
-                    <span class="icons__item"><img src="./assets/image/icons/icons-2.png" alt="icon"></span>
-                    <span class="icons__item"><img src="./assets/image/icons/icons-1.png" alt="icon"></span>
-                    <span class="icons__item"><img src="./assets/image/icons/icons-5.png" alt="icon"></span>
-                    <span class="icons__item"><img src="./assets/image/icons/icons-3.png" alt="icon"></span>
-                    <span class="icons__item"><img src="./assets/image/icons/icons-4.png" alt="icon"></span>
-                    <span class="icons__item"><img src="./assets/image/icons/icons-3.png" alt="icon"></span>
-                    <span class="icons__item"><img src="./assets/image/icons/icons-2.png" alt="icon"></span>
-                    <span class="icons__item"><img src="./assets/image/icons/icons-4.png" alt="icon"></span>
-                    <span class="icons__item"><img src="./assets/image/icons/icons-1.png" alt="icon"></span>
-                    <span class="icons__item"><img src="./assets/image/icons/icons-4.png" alt="icon"></span>
-                    <span class="icons__item"><img src="./assets/image/icons/icons-2.png" alt="icon"></span>
-                    <span class="icons__item"><img src="./assets/image/icons/icons-1.png" alt="icon"></span>
-                    <span class="icons__item"><img src="./assets/image/icons/icons-5.png" alt="icon"></span>
-                    <span class="icons__item"><img src="./assets/image/icons/icons-3.png" alt="icon"></span>
-                    <span class="icons__item"><img src="./assets/image/icons/icons-4.png" alt="icon"></span>
-                    <span class="icons__item"><img src="./assets/image/icons/icons-3.png" alt="icon"></span>
-                    <span class="icons__item"><img src="./assets/image/icons/icons-4.png" alt="icon"></span>
-                    <span class="icons__item"><img src="./assets/image/icons/icons-3.png" alt="icon"></span>
-                    <span class="icons__item"><img src="./assets/image/icons/icons-4.png" alt="icon"></span>
-                    <span class="icons__item"><img src="./assets/image/icons/icons-2.png" alt="icon"></span>
-                    <span class="icons__item"><img src="./assets/image/icons/icons-1.png" alt="icon"></span>
-                    <span class="icons__item"><img src="./assets/image/icons/icons-5.png" alt="icon"></span>
-                    <span class="icons__item"><img src="./assets/image/icons/icons-3.png" alt="icon"></span>
                 </div>
-            </div>
-        </main>
-        <footer class="footer" id="contact">
-            <div class="container">
-                <div class="footer__wrapper">
-                    <h2>Наши <span data-text="контакты" class="text-fill">контакты</span></h2>
-                    <div class="footer__address">
-                        <div class="footer__map">
-                            <script type="text/javascript" charset="utf-8" async
-                                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abfaf754c7e1dec3bf720993ac474dede1b3e97df287d2ee496452dc4324a2410&amp;width=650&amp;height=380&amp;lang=ru_RU&amp;scroll=true"></script>
+            </section>
+            <section class="feedback">
+                <div class="container">
+                    <div class="feedback__wrapper">
+                        <div class="feedback__info">
+                            <h2>Приходите на прием-
+                                осмотрим и составим план лечения<br>
+                                <span data-text="БЕСПЛАТНО" class="text-fill">БЕСПЛАТНО</span>
+                            </h2>
+                            <form>
+                                <fieldset>
+                                    <input type="text" placeholder="Имя" required>
+                                    <input type="tel" placeholder="+7 (777) 777 77 77" required>
+                                    <button type="submit" class="button">Записаться на прием</button>
+                                </fieldset>
+                            </form>
                         </div>
-                        <div class="footer__info">
-                            <div class="footer__info-top">
-                                <h3>Адрес</h3>
-                                <p>г. Алматы, ул. Шагабутдинова 132</p>
-                            </div>
-                            <div class="footer__info-bottom">
-                                <h3>Телефон</h3>
-                                <a href="tel:+77761029766">+7 776 102 9766</a>
-                                <a href="tel:+77477358552">+7 747 735 8552</a>
-                                <a href="tel:+77471805020">+7 747 180 5020</a>
-                                <button class="button">Записаться на прием</button>
-                            </div>
-                        </div>
+                        <img class="feedback__image" src="./assets/image/feedback/image.png"
+                            alt="Сотрудники стоматологий в форме">
                     </div>
-                    <div class="footer__subinfo">
-                        <div class="footer__subinfo-wrap">
-                            <div class="footer__item">© 2023, «Individent.kz»</div>
-                            <div class="footer__item">© Все права защищены</div>
+                </div>
+            </section>
+            <section class="doctors">
+                <div class="container">
+                    <h2><span data-text="Наши" class="text-fill">Наши</span> врачи</h2>
+                    <div class="doctors__wrapper">
+                        <div class="doctors__info">
+                            <p>Наша команда специалистов ежегодно повышает квалификацию, и увлечена своим делом.
+                                Наша
+                                цель не только сделать вас
+                                здоровыми, но и подарить совершенную улыбку. Огромный вклад в это вносит главный
+                                врач
+                                Рыскулбеков Данияр Ануарулы. Он
+                                является практикующим ортодонтом с применением практики установки ОртоИмплантатов
+                                для
+                                коррекции прикуса любой сложности.
+                                На его счету свыше 15 семинаров от зарубежных лекторов и работа с самыми
+                                современными
+                                протоколами и материалами.
+                                Благодаря такому багажу знаний ему даже удалось поработать с самым лучшим
+                                стоматологом
+                                Республики Казахстан в течение 6
+                                лет.</p>
+                            <img src="./assets/image/doctors/image-1.jpg" alt="Наш персонал, с инструментами в руках">
                         </div>
-                        <div class="footer__item">Разработка веб студии
-                            <a href="https://xn--b1adeadlc3bdjl.kz/sozdanie-sajtov/lendingi/" target="_blank">
-                                <img src="./assets/image/logo-webcompany.png" alt="Продвижение.kz">
-                            </a>
+                        <div class="doctors__slider">
+                            <div class="swiper doctors__swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="./assets/image/doctors/slider-1.jpg"
+                                            alt="Имя фамилия" loading="lazy"></div>
+                                    <div class="swiper-slide"><img src="./assets/image/doctors/slider-2.jpeg"
+                                            alt="Имя фамилия" loading="lazy"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next doctors-button-next"></div>
+                            <div class="swiper-button-prev doctors-button-prev"></div>
+                            <div class="swiper-pagination doctors-pagination"></div>
                         </div>
                     </div>
                 </div>
+            </section>
+            <section class="action" id="action">
+                <div class="container">
+                    <div class="action__wrapper">
+                        <h2>Успейте воспользоваться <span data-text="акционными" class="text-fill">акционными</span>
+                            предложениями</h2>
+                        <ul class="action__list">
+                            <li class="action__item">
+                                <p>Успейте воспользоваться скидкой <strong>35% на Американские брекеты.</strong></p>
+                                <p>Ограниченное место на скидку брекетов
+                                    <strong>65 000 тг</strong> на одну челюсть
+                                    вместо 100 000 тг
+                                </p>
+                                <img src="./assets/image/action/img-1.png" alt="брекеты">
+                            </li>
+                            <li class="action__item">
+                                <p><strong>Invisalign 4000$</strong></p>
+                                <p>вместо 4500$</p>
+                                <img src="./assets/image/action/img-2.png" alt="Invisalign">
+                            </li>
+                            <li class="action__item">
+                                <p>Акция на <strong>профессиональную чистку в три этапа</strong></p>
+                                <p><strong>11 990 тг</strong>
+                                    вместо 19 990тг</p>
+                                <img src="./assets/image/action/img-3.png" alt="чистка зубов">
+                            </li>
+                        </ul>
+                        <ul class="action__list action__list-bottom">
+                            <li class="action__item">
+                                <div class="action__item-info">
+                                    <p>Постоянным пациентам</p>
+                                    <p>скидка 10%</p>
+                                </div>
+                                <img src="./assets/image/action/img-4.png" alt="девушка">
+                            </li>
+                            <li class="action__item">
+                                <div class="action__item-info">
+                                    <p>Отзыв на 2 Гис</p>
+                                    <p>скидка 5%</p>
+                                </div>
+                                <img src="./assets/image/action/img-5.png" alt="значек 2gis">
+                            </li>
+                        </ul>
+                        <button type="button" class="button">Записаться на бесплатную консультацию</button>
+                    </div>
+                </div>
+            </section>
+            <section class="work" id="work">
+                <div class="container">
+                    <div class="work__wrapper">
+                        <h2>Наши <span data-text="работы" class="text-fill">работы</span></h2>
+                        <div class="work__slider">
+                            <div class="swiper work__swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="./assets/image/work/img-1.jpg" alt="зубы" loading="lazy">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./assets/image/work/img-2.jpeg" alt="зубы" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next work-button-next"></div>
+                            <div class="swiper-button-prev work-button-prev"></div>
+                            <div class="swiper-pagination work-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="review">
+                <div class="container">
+                    <div class="review__wrapper">
+                        <h2><span data-text="Отзывы" class="text-fill">Отзывы</span> и благодарственные письма</h2>
+                        <div class="review__slider">
+                            <div class="review__slider-image">
+                                <div class="review__slider-wrap">
+                                    <div class="swiper review__slider-one">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="./assets/image/review/reviews/slide-1.jpg" alt="отзыв"
+                                                    loading="lazy">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/image/review/reviews/slide-1.jpg" alt="отзыв"
+                                                    loading="lazy">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/image/review/reviews/slide-1.jpg" alt="отзыв"
+                                                    loading="lazy">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next slider-button-next-one"></div>
+                                    <div class="swiper-button-prev slider-button-prev-one"></div>
+                                    <div class="swiper-pagination slider-pagination-one"></div>
+                                </div>
+                                <div class="review__slider-wrap">
+                                    <div class="swiper review__slider-two">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="./assets/image/review/letters/slide-1.jpg"
+                                                    alt="благодарственное письмо" loading="lazy">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/image/review/letters/slide-1.jpg"
+                                                    alt="благодарственное письмо" loading="lazy">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/image/review/letters/slide-1.jpg"
+                                                    alt="благодарственное письмо" loading="lazy">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next slider-button-next-two"></div>
+                                    <div class="swiper-button-prev slider-button-prev-two"></div>
+                                    <div class="swiper-pagination slider-pagination-two"></div>
+                                </div>
+                            </div>
+                            <div class="review__slider-text">
+                                <div class="review__slider-wrap">
+                                    <div class="swiper review__slider-three">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="review__slide-title">
+                                                    <img src="./assets/image/review/text/img.png" alt="фотография">
+                                                    <div class="review__slide-title-name">
+                                                        <p>Наталья Борисова</p>
+                                                        <img src="./assets/image/review/text/star-5.png" alt="5 звезд">
+                                                    </div>
+                                                </div>
+                                                <p>Всегда очень чисто и приветливый персонал. Все готовы прийти на
+                                                    помощь, и неважно, какой врач тебя наблюдает- все врачи
+                                                    готовы помочь 24/7. Видно, что соседи вороны руководства
+                                                    проводится
+                                                    огромная работа с персоналом и политикой лояльности
+                                                    к клиентам и я это очень ценю.</p>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="review__slide-title">
+                                                    <img src="./assets/image/review/text/img.png" alt="фотография">
+                                                    <div class="review__slide-title-name">
+                                                        <p>Наталья Борисова</p>
+                                                        <img src="./assets/image/review/text/star-5.png" alt="5 звезд">
+                                                    </div>
+                                                </div>
+                                                <p>Всегда очень чисто и приветливый персонал. Все готовы прийти на
+                                                    помощь, и неважно, какой врач тебя наблюдает- все врачи
+                                                    готовы помочь 24/7. Видно, что соседи вороны руководства
+                                                    проводится
+                                                    огромная работа с персоналом и политикой лояльности
+                                                    к клиентам и я это очень ценю.</p>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="review__slide-title">
+                                                    <img src="./assets/image/review/text/img.png" alt="фотография">
+                                                    <div class="review__slide-title-name">
+                                                        <p>Наталья Борисова</p>
+                                                        <img src="./assets/image/review/text/star-5.png" alt="5 звезд">
+                                                    </div>
+                                                </div>
+                                                <p>Всегда очень чисто и приветливый персонал. Все готовы прийти на
+                                                    помощь, и неважно, какой врач тебя наблюдает- все врачи
+                                                    готовы помочь 24/7. Видно, что соседи вороны руководства
+                                                    проводится
+                                                    огромная работа с персоналом и политикой лояльности
+                                                    к клиентам и я это очень ценю.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next slider-button-next-three"></div>
+                                    <div class="swiper-button-prev slider-button-prev-three"></div>
+                                    <div class="swiper-pagination slider-pagination-three"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="icons__wrap" aria-hidden="true">
+                <span class="icons__item"><img src="./assets/image/icons/icons-1.png" alt="icon"></span>
+                <span class="icons__item"><img src="./assets/image/icons/icons-2.png" alt="icon"></span>
+                <span class="icons__item"><img src="./assets/image/icons/icons-3.png" alt="icon"></span>
+                <span class="icons__item"><img src="./assets/image/icons/icons-4.png" alt="icon"></span>
+                <span class="icons__item"><img src="./assets/image/icons/icons-2.png" alt="icon"></span>
+                <span class="icons__item"><img src="./assets/image/icons/icons-1.png" alt="icon"></span>
+                <span class="icons__item"><img src="./assets/image/icons/icons-5.png" alt="icon"></span>
+                <span class="icons__item"><img src="./assets/image/icons/icons-3.png" alt="icon"></span>
+                <span class="icons__item"><img src="./assets/image/icons/icons-4.png" alt="icon"></span>
+                <span class="icons__item"><img src="./assets/image/icons/icons-3.png" alt="icon"></span>
+                <span class="icons__item"><img src="./assets/image/icons/icons-2.png" alt="icon"></span>
+                <span class="icons__item"><img src="./assets/image/icons/icons-4.png" alt="icon"></span>
+                <span class="icons__item"><img src="./assets/image/icons/icons-1.png" alt="icon"></span>
+                <span class="icons__item"><img src="./assets/image/icons/icons-1.png" alt="icon"></span>
+                <span class="icons__item"><img src="./assets/image/icons/icons-2.png" alt="icon"></span>
+                <span class="icons__item"><img src="./assets/image/icons/icons-3.png" alt="icon"></span>
+                <span class="icons__item"><img src="./assets/image/icons/icons-4.png" alt="icon"></span>
+                <span class="icons__item"><img src="./assets/image/icons/icons-2.png" alt="icon"></span>
+                <span class="icons__item"><img src="./assets/image/icons/icons-1.png" alt="icon"></span>
+                <span class="icons__item"><img src="./assets/image/icons/icons-5.png" alt="icon"></span>
+                <span class="icons__item"><img src="./assets/image/icons/icons-3.png" alt="icon"></span>
+                <span class="icons__item"><img src="./assets/image/icons/icons-4.png" alt="icon"></span>
+                <span class="icons__item"><img src="./assets/image/icons/icons-3.png" alt="icon"></span>
+                <span class="icons__item"><img src="./assets/image/icons/icons-2.png" alt="icon"></span>
+                <span class="icons__item"><img src="./assets/image/icons/icons-4.png" alt="icon"></span>
+                <span class="icons__item"><img src="./assets/image/icons/icons-1.png" alt="icon"></span>
+                <span class="icons__item"><img src="./assets/image/icons/icons-4.png" alt="icon"></span>
+                <span class="icons__item"><img src="./assets/image/icons/icons-2.png" alt="icon"></span>
+                <span class="icons__item"><img src="./assets/image/icons/icons-1.png" alt="icon"></span>
+                <span class="icons__item"><img src="./assets/image/icons/icons-5.png" alt="icon"></span>
+                <span class="icons__item"><img src="./assets/image/icons/icons-3.png" alt="icon"></span>
+                <span class="icons__item"><img src="./assets/image/icons/icons-4.png" alt="icon"></span>
+                <span class="icons__item"><img src="./assets/image/icons/icons-3.png" alt="icon"></span>
+                <span class="icons__item"><img src="./assets/image/icons/icons-4.png" alt="icon"></span>
+                <span class="icons__item"><img src="./assets/image/icons/icons-3.png" alt="icon"></span>
+                <span class="icons__item"><img src="./assets/image/icons/icons-4.png" alt="icon"></span>
+                <span class="icons__item"><img src="./assets/image/icons/icons-2.png" alt="icon"></span>
+                <span class="icons__item"><img src="./assets/image/icons/icons-1.png" alt="icon"></span>
+                <span class="icons__item"><img src="./assets/image/icons/icons-5.png" alt="icon"></span>
+                <span class="icons__item"><img src="./assets/image/icons/icons-3.png" alt="icon"></span>
             </div>
-        </footer>
+        </div>
+    </main>
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer__wrapper">
+                <h2>Наши <span data-text="контакты" class="text-fill">контакты</span></h2>
+                <div class="footer__address">
+                    <div class="footer__map">
+                        <script type="text/javascript" charset="utf-8" async
+                            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abfaf754c7e1dec3bf720993ac474dede1b3e97df287d2ee496452dc4324a2410&amp;width=650&amp;height=380&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
+                    <div class="footer__info">
+                        <div class="footer__info-top">
+                            <h3>Адрес</h3>
+                            <p>г. Алматы, ул. Шагабутдинова 132</p>
+                        </div>
+                        <div class="footer__info-bottom">
+                            <h3>Телефон</h3>
+                            <a href="tel:+77761029766">+7 776 102 9766</a>
+                            <a href="tel:+77477358552">+7 747 735 8552</a>
+                            <a href="tel:+77471805020">+7 747 180 5020</a>
+                            <button class="button">Записаться на прием</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__subinfo">
+                    <div class="footer__subinfo-wrap">
+                        <div class="footer__item">© 2023, «Individent.kz»</div>
+                        <div class="footer__item">© Все права защищены</div>
+                    </div>
+                    <div class="footer__item">Разработка веб студии
+                        <a href="https://xn--b1adeadlc3bdjl.kz/sozdanie-sajtov/lendingi/" target="_blank">
+                            <img src="./assets/image/logo-webcompany.png" alt="Продвижение.kz">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="popup">
+        <img src="./assets/image/popup-close.png" alt="закрыть" class="popup__close">
+        <form>
+            <fieldset>
+                <legend>Связаться с нами</legend>
+                <input type="text" placeholder="Имя" required>
+                <input type="tel" placeholder="+7 (777) 777 77 77" required>
+                <button type="submit" class="button">Записаться на прием</button>
+            </fieldset>
+        </form>
     </div>
 
     <script src="./assets/swiper/swiper-bundle.min.js"></script>

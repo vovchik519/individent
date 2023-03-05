@@ -182,6 +182,20 @@ closeMenu.forEach(function (item) {
         menuBtn.setAttribute('aria-expanded', isExpanded);
     });
 });
+let button = document.querySelectorAll('.button');
+let popup = document.querySelector('.popup');
+let popupClose = document.querySelector('.popup__close');
+button.forEach(function (item) {
+    item.addEventListener('click', function () {
+        popup.classList.add('active');
+        bodyOverflow.classList.add('lock');
+    });
+});
+
+popupClose.addEventListener('click', function () {
+    popup.classList.remove('active');
+    bodyOverflow.classList.remove('lock');
+});
 
 function openTab(evt, tabId) {
     var i, tabContent, tabLinks;
