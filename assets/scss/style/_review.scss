@@ -25,9 +25,10 @@
         .swiper-slide {
             img {
                 width: 100%;
+                height: 100%;
                 border-radius: 15px;
                 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-                padding: 4px;
+                padding: 8px;
             }
         }
     }
@@ -127,7 +128,7 @@
             img {
                 border-radius: 4.167vw;
                 filter: drop-shadow(0px 1.111vw 1.111vw rgba(0, 0, 0, 0.25));
-                padding: 1.111vw;
+                padding: 2.2vw;
             }
         }
         &__slide-title {
