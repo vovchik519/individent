@@ -182,7 +182,7 @@ closeMenu.forEach(function (item) {
         menuBtn.setAttribute('aria-expanded', isExpanded);
     });
 });
-let button = document.querySelectorAll('.button');
+let button = document.querySelectorAll('.btn-popup');
 let popup = document.querySelector('.popup');
 let popupClose = document.querySelector('.popup__close');
 button.forEach(function (item) {
@@ -245,5 +245,22 @@ window.addEventListener('scroll', function () {
     let scrollPosition = window.pageYOffset;
     parallaxItems.forEach(function (parallax) {
         parallax.style.transform = 'translateY(' + scrollPosition * 0.2 + 'px)';
+    });
+});
+
+const links = document.querySelectorAll('nav ul li a');
+
+links.forEach(link => {
+    link.addEventListener('click', (event) => {
+        event.preventDefault();
+
+        const href = link.getAttribute('href');
+        const target = document.querySelector(href);
+        const offsetTop = target.offsetTop;
+
+        window.scrollTo({
+            top: offsetTop,
+            behavior: 'smooth'
+        });
     });
 });

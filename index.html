@@ -35,13 +35,13 @@
                         <li class="header__item close-menu"><a href="#work" data-text="Наши работы">Наши работы</a>
                         </li>
                         <li class="header__item close-menu"><a href="#action" data-text="Акции">Акции</a></li>
-                        <li class="header__item close-menu"><a href="#price" data-text="Цены">Цены</a></li>
+                        <!-- <li class="header__item close-menu"><a href="#price" data-text="Цены">Цены</a></li> -->
                         <li class="header__item close-menu"><a href="#contact" data-text="Контакты">Контакты</a>
                         </li>
                     </ul>
                     <div class="header__entry header__entry-mobile">
                         <a class="close-menu" href="tel:+77761029766 ">+7 776 102 9766</a>
-                        <button type="button" class="button close-menu">Записаться на прием</button>
+                        <button type="button" class="button close-menu btn-popup">Записаться на прием</button>
                     </div>
                 </nav>
                 <div class="header__right">
@@ -64,7 +64,7 @@
                     </div>
                     <div class="header__entry">
                         <a href="tel:+77761029766">+7 776 102 9766</a>
-                        <button type="button" class="button">Записаться на прием</button>
+                        <button type="button" class="button btn-popup">Записаться на прием</button>
                     </div>
                     <button type="button" class="menu__burger" aria-label="Меню" aria-expanded="false">
                         <svg viewBox="0 0 100 100">
@@ -121,7 +121,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button type="button" class="button">Записаться на бесплатную консультацию</button>
+                        <button type="button" class="button btn-popup">Записаться на бесплатную консультацию</button>
                     </div>
                     <div class="firstscreen__slider">
                         <div class="swiper firstscreen__swiper-image">
@@ -253,7 +253,7 @@
                                 составленному плану лечения.
                             </li>
                         </ul>
-                        <button type="button" class="button">Записаться на бесплатную консультацию</button>
+                        <button type="button" class="button btn-popup">Записаться на бесплатную консультацию</button>
                     </div>
                 </div>
             </section>
@@ -338,7 +338,7 @@
                                             <p>Установка имплантов на место поврежденных зубов</p>
                                         </li>
                                     </ul>
-                                    <button type="button" class="button">Записаться на прием</button>
+                                    <button type="button" class="button btn-popup">Записаться на прием</button>
                                 </div>
                                 <div class="services__tabs" id="small" style="display:none;">
                                     <ul class="services__list">
@@ -408,7 +408,7 @@
                                             <p>Проводим пластику уздечки языка и губ под наркозом</p>
                                         </li>
                                     </ul>
-                                    <button type="button" class="button">Записаться на прием</button>
+                                    <button type="button" class="button btn-popup">Записаться на прием</button>
                                 </div>
                             </div>
                         </div>
@@ -489,7 +489,7 @@
                                     удобном виде транспорта.</p>
                             </li>
                         </ul>
-                        <button type="button" class="button">Записаться на бесплатную консультацию</button>
+                        <button type="button" class="button btn-popup">Записаться на бесплатную консультацию</button>
                     </div>
                 </div>
             </section>
@@ -546,8 +546,10 @@
                                             alt="Имя фамилия" loading="lazy"></div>
                                 </div>
                             </div>
-                            <div class="swiper-button-next doctors-button-next"></div>
-                            <div class="swiper-button-prev doctors-button-prev"></div>
+                            <button type="button" class="swiper-button-next doctors-button-next"
+                                aria-label="Слайдер далее"></button>
+                            <button type="button" class="swiper-button-prev doctors-button-prev"
+                                aria-label="Слайдер назад"></button>
                             <div class="swiper-pagination doctors-pagination"></div>
                         </div>
                     </div>
@@ -595,7 +597,7 @@
                                 <img src="./assets/image/action/img-5.png" alt="значек 2gis">
                             </li>
                         </ul>
-                        <button type="button" class="button">Записаться на бесплатную консультацию</button>
+                        <button type="button" class="button btn-popup">Записаться на бесплатную консультацию</button>
                     </div>
                 </div>
             </section>
@@ -614,8 +616,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-button-next work-button-next"></div>
-                            <div class="swiper-button-prev work-button-prev"></div>
+                            <button type="button" class="swiper-button-next work-button-next"
+                                aria-label="Слайдер далее"></button>
+                            <button type="button" class="swiper-button-prev work-button-prev"
+                                aria-label="Слайдер назад"></button>
                             <div class="swiper-pagination work-pagination"></div>
                         </div>
                     </div>
@@ -644,8 +648,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="swiper-button-next slider-button-next-one"></div>
-                                    <div class="swiper-button-prev slider-button-prev-one"></div>
+                                    <button type="button" class="swiper-button-next slider-button-next-one"
+                                        aria-label="Слайдер далее"></button>
+                                    <button type="button" class="swiper-button-prev slider-button-prev-one"
+                                        aria-label="Слайдер назад"></button>
                                     <div class="swiper-pagination slider-pagination-one"></div>
                                 </div>
                                 <div class="review__slider-wrap">
@@ -665,8 +671,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="swiper-button-next slider-button-next-two"></div>
-                                    <div class="swiper-button-prev slider-button-prev-two"></div>
+                                    <button type="button" class="swiper-button-next slider-button-next-two"
+                                        aria-label="Слайдер далее"></button>
+                                    <button type="button" class="swiper-button-prev slider-button-prev-two"
+                                        aria-label="Слайдер назад"></button>
                                     <div class="swiper-pagination slider-pagination-two"></div>
                                 </div>
                             </div>
@@ -721,8 +729,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="swiper-button-next slider-button-next-three"></div>
-                                    <div class="swiper-button-prev slider-button-prev-three"></div>
+                                    <button type="button" class="swiper-button-next slider-button-next-three"
+                                        aria-label="Слайдер далее"></button>
+                                    <button type="button" class="swiper-button-prev slider-button-prev-three"
+                                        aria-label="Слайдер назад"></button>
                                     <div class="swiper-pagination slider-pagination-three"></div>
                                 </div>
                             </div>
@@ -793,7 +803,7 @@
                             <a href="tel:+77761029766">+7 776 102 9766</a>
                             <a href="tel:+77477358552">+7 747 735 8552</a>
                             <a href="tel:+77471805020">+7 747 180 5020</a>
-                            <button class="button">Записаться на прием</button>
+                            <button class="button btn-popup">Записаться на прием</button>
                         </div>
                     </div>
                 </div>
