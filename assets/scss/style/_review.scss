@@ -25,6 +25,9 @@
         .swiper-slide {
             img {
                 width: 100%;
+                border-radius: 15px;
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                padding: 4px;
             }
         }
     }
@@ -85,7 +88,7 @@
 }
 @media (max-width: 768px) {
     .review {
-        padding: 8.333vw 0;
+        padding: 8.333vw 0 20vw;
         // .review__wrapper
 
         &__wrapper {
@@ -121,8 +124,10 @@
         }
         // .review__slide-title
         .swiper-slide {
-            p {
-                font-size: 4.444vw;
+            img {
+                border-radius: 4.167vw;
+                filter: drop-shadow(0px 1.111vw 1.111vw rgba(0, 0, 0, 0.25));
+                padding: 1.111vw;
             }
         }
         &__slide-title {
@@ -139,7 +144,7 @@
         &__slide-title-name {
             img {
                 max-width: 100%;
-                width: 90%;
+                width: 70%;
                 height: auto;
             }
         }
