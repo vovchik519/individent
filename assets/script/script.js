@@ -248,18 +248,11 @@ window.addEventListener('scroll', function () {
     });
 });
 
-const links = document.querySelectorAll('nav ul li a');
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
 
-links.forEach(link => {
-    link.addEventListener('click', (event) => {
-        event.preventDefault();
-
-        const href = link.getAttribute('href');
-        const target = document.querySelector(href);
-        const offsetTop = target.offsetTop;
-
-        window.scrollTo({
-            top: offsetTop,
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
             behavior: 'smooth'
         });
     });

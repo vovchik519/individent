@@ -91,6 +91,10 @@ h2 {
 h3 {
     font-size: 20px;
 }
+section{
+    position: relative;
+    z-index: 1;
+}
 .container {
     max-width: 1186px;
     padding: 0 20px;

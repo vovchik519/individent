@@ -6,7 +6,6 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
     img {
         width: 50px;
         height: 50px;
@@ -227,76 +226,6 @@
 .icons__item:nth-child(30) {
     left: 90.161vw;
     top: 8391px - 643px;
-    img {
-        transform: rotate(29.1deg);
-    }
-}
-.icons__item:nth-child(31) {
-    left: 85.161vw;
-    top: 8791px - 643px;
-    img {
-        transform: rotate(29.1deg);
-    }
-}
-.icons__item:nth-child(32) {
-    left: 15.161vw;
-    top: 9091px - 643px;
-    img {
-        transform: rotate(27.1deg);
-    }
-}
-.icons__item:nth-child(33) {
-    left: 95.161vw;
-    top: 9491px - 643px;
-    img {
-        transform: rotate(25.1deg);
-    }
-}
-.icons__item:nth-child(34) {
-    left: 5.161vw;
-    top: 9791px - 643px;
-    img {
-        transform: rotate(24.1deg);
-    }
-}
-.icons__item:nth-child(35) {
-    left: 10.161vw;
-    top: 10000px - 643px;
-    img {
-        transform: rotate(29.1deg);
-    }
-}
-.icons__item:nth-child(36) {
-    left: 85.161vw;
-    top: 11091px - 643px;
-    img {
-        transform: rotate(29.1deg);
-    }
-}
-.icons__item:nth-child(37) {
-    left: 15.161vw;
-    top: 13901px - 643px;
-    img {
-        transform: rotate(27.1deg);
-    }
-}
-.icons__item:nth-child(38) {
-    left: 95.161vw;
-    top: 15091px - 643px;
-    img {
-        transform: rotate(25.1deg);
-    }
-}
-.icons__item:nth-child(39) {
-    left: 5.161vw;
-    top: 16091px - 643px;
-    img {
-        transform: rotate(24.1deg);
-    }
-}
-.icons__item:nth-child(40) {
-    left: 10.161vw;
-    top: 17500px - 643px;
     img {
         transform: rotate(29.1deg);
     }
