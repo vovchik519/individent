@@ -39,6 +39,7 @@
         font-size: 24px;
         line-height: 28px;
         text-align: start;
+        overflow: hidden;
         p {
             width: 100%;
             padding: 0 30px;
@@ -48,6 +49,7 @@
             margin-top: 20px;
             width: 210px;
             height: auto;
+            border-radius: 30px 5px 0 30px;
         }
     }
     &__list-bottom {
@@ -62,7 +64,6 @@
                 width: 260px;
                 height: auto;
                 filter: drop-shadow(-4px 0px 4px rgba(0, 0, 0, 0.25));
-                border-radius: 30px 0 0 30px;
             }
         }
     }
@@ -143,6 +144,7 @@
             img {
                 margin-top: 7vw;
                 width: 70vw;
+                border-radius: 8.333vw 2vw 0 8.333vw;
             }
         }
         &__list-bottom {
@@ -153,8 +155,9 @@
                 align-items: flex-start;
                 img {
                     width: 50vw;
-                    filter: drop-shadow(-1.111vw 0px 1.111vw rgba(0, 0, 0, 0.25));
-                    border-radius: 8.333vw 0 0 8.333vw;
+                    filter: drop-shadow(
+                        -1.111vw 0px 1.111vw rgba(0, 0, 0, 0.25)
+                    );
                 }
             }
         }

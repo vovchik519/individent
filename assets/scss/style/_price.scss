@@ -18,6 +18,9 @@
         summary {
             background-color: white;
             cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             padding: 30px 50px;
             font-size: 28px;
             line-height: 1.2em;
@@ -28,6 +31,17 @@
         }
         summary::marker {
             content: "";
+        }
+        summary::after {
+            content: "→";
+            display: inline-block;
+            font-size: 50px;
+            margin-left: 10px;
+            transition: 0.3s;
+            flex: 0 0 21px;
+        }
+        summary.active::after {
+            transform: rotate(90deg) !important;
         }
         table {
             width: 100%;
@@ -62,6 +76,13 @@
                 font-size: 5.556vw;
                 margin: 2.778vw 0 0 0;
                 border-radius: 5.556vw;
+            }
+            summary::after {
+                content: "→";
+                display: inline-block;
+                margin-left: 1.389vw;
+                font-size: 7vw;
+                flex: 0 0 6.944vw;
             }
             table {
                 padding: 2.778vw 5.556vw 4.167vw;

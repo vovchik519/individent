@@ -192,6 +192,13 @@ button.forEach(function (item) {
     });
 });
 
+let summary = document.querySelectorAll('.price__summary');
+summary.forEach(function (item) {
+    item.addEventListener('click', function () {
+        item.classList.toggle('active');
+    });
+});
+
 popupClose.addEventListener('click', function () {
     popup.classList.remove('active');
     bodyOverflow.classList.remove('lock-all');
