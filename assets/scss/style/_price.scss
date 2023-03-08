@@ -53,6 +53,9 @@
             gap: 30px;
             padding: 10px 0;
             border-bottom: 1px solid black;
+            td:last-child {
+                font-weight: 700;
+            }
         }
     }
 }
