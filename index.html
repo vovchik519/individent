@@ -199,8 +199,8 @@
                         <div class="steps__image">
                             <img src="./assets/image/steps/image-1.jpg" alt="аппарат для снимка ренгена зубов"
                                 width="560" height="396" loading="lazy">
-                            <img src="./assets/image/steps/image-2.jpg" alt="приятный персонал" width="560"
-                                height="302" loading="lazy">
+                            <img src="./assets/image/steps/image-2.jpg" alt="приятный персонал" width="560" height="302"
+                                loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -535,7 +535,8 @@
                                 стоматологом
                                 Республики Казахстан в течение 6
                                 лет.</p>
-                            <img src="./assets/image/doctors/image-1.jpg" alt="Наш персонал, с инструментами в руках" loading="lazy">
+                            <img src="./assets/image/doctors/image-1.jpg" alt="Наш персонал, с инструментами в руках"
+                                loading="lazy">
                         </div>
                         <div class="doctors__slider">
                             <div class="swiper doctors__swiper">
@@ -1042,10 +1043,12 @@
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
                                                 <div class="review__slide-title">
-                                                    <img src="./assets/image/review/text/img.png" alt="фотография" loading="lazy">
+                                                    <img src="./assets/image/review/text/img.png" alt="фотография"
+                                                        loading="lazy">
                                                     <div class="review__slide-title-name">
                                                         <p>Наталья Борисова</p>
-                                                        <img src="./assets/image/review/text/star-5.png" alt="5 звезд" loading="lazy">
+                                                        <img src="./assets/image/review/text/star-5.png" alt="5 звезд"
+                                                            loading="lazy">
                                                     </div>
                                                 </div>
                                                 <p>Всегда очень чисто и приветливый персонал. Все готовы прийти на
@@ -1057,10 +1060,12 @@
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="review__slide-title">
-                                                    <img src="./assets/image/review/text/img.png" alt="фотография" loading="lazy">
+                                                    <img src="./assets/image/review/text/img.png" alt="фотография"
+                                                        loading="lazy">
                                                     <div class="review__slide-title-name">
                                                         <p>Наталья Борисова</p>
-                                                        <img src="./assets/image/review/text/star-5.png" alt="5 звезд" loading="lazy">
+                                                        <img src="./assets/image/review/text/star-5.png" alt="5 звезд"
+                                                            loading="lazy">
                                                     </div>
                                                 </div>
                                                 <p>Всегда очень чисто и приветливый персонал. Все готовы прийти на
@@ -1072,10 +1077,12 @@
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="review__slide-title">
-                                                    <img src="./assets/image/review/text/img.png" alt="фотография" loading="lazy">
+                                                    <img src="./assets/image/review/text/img.png" alt="фотография"
+                                                        loading="lazy">
                                                     <div class="review__slide-title-name">
                                                         <p>Наталья Борисова</p>
-                                                        <img src="./assets/image/review/text/star-5.png" alt="5 звезд" loading="lazy">
+                                                        <img src="./assets/image/review/text/star-5.png" alt="5 звезд"
+                                                            loading="lazy">
                                                     </div>
                                                 </div>
                                                 <p>Всегда очень чисто и приветливый персонал. Все готовы прийти на
@@ -1138,8 +1145,41 @@
                 <h2>Наши <span data-text="контакты" class="text-fill">контакты</span></h2>
                 <div class="footer__address">
                     <div class="footer__map">
-                        <script type="text/javascript" charset="utf-8" async
-                            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abfaf754c7e1dec3bf720993ac474dede1b3e97df287d2ee496452dc4324a2410&amp;width=650&amp;height=380&amp;lang=ru_RU&amp;scroll=true"></script>
+                        <div class="footer__map-wrap" id="map-wrap">
+                            <img src="./assets/image/map-1.png" alt="перейти в яндекс карту" class="footer__map-image"
+                                id="map" loading="lazy">
+                            <div class="footer__map-mark-wrap" id="mark">
+                                <span class="footer__map-mark" id="mark-1" onclick="toggleMark1()"><img
+                                        src="./assets/image/mark.svg" alt="маркировка"></span>
+                                <p class="footer__map-tooltip" id="tooltip-1" style="display: none;">г. Алматы, ул.
+                                    Шагабутдинова 132</p>
+                            </div>
+                        </div>
+                        <div class="footer__map-button">
+                            <button type="button" id="zoom-in">
+                                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M11 5.992c0-.537.448-.992 1-.992.556 0 1 .444 1 .992V11h5.008c.537 0 .992.448.992 1 0 .556-.444 1-.992 1H13v5.008c0 .537-.448.992-1 .992-.556 0-1-.444-1-.992V13H5.992C5.455 13 5 12.552 5 12c0-.556.444-1 .992-1H11V5.992z"
+                                        fill="currentColor"></path>
+                                </svg>
+                            </button>
+                            <button type="button" id="zoom-out">
+                                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5 12a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1z" fill="currentColor">
+                                    </path>
+                                </svg>
+                            </button>
+                        </div>
+                        <a href="https://yandex.com/maps/162/almaty/?ll=76.922023%2C43.245296&mode=usermaps&source=constructorLink&um=constructor%3Abfaf754c7e1dec3bf720993ac474dede1b3e97df287d2ee496452dc4324a2410&z=16"
+                            class="footer__map-link" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 1a9.002 9.002 0 0 0-6.366 15.362c1.63 1.63 5.466 3.988 5.693 6.465.034.37.303.673.673.673.37 0 .64-.303.673-.673.227-2.477 4.06-4.831 5.689-6.46A9.002 9.002 0 0 0 12 1zm0 12.079a3.079 3.079 0 1 1 0-6.158 3.079 3.079 0 0 1 0 6.158z"
+                                    fill="#FF4433"></path>
+                            </svg>
+                            <span>Открыть в яндекс Картах</span>
+                        </a>
                     </div>
                     <div class="footer__info">
                         <div class="footer__info-top">

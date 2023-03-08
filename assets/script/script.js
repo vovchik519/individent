@@ -264,3 +264,95 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+var mapWrap = document.getElementById("map-wrap");
+var mapImage = document.getElementById("map");
+var mapMark = document.getElementById("mark");
+const zoomInButton = document.getElementById("zoom-in");
+const zoomOutButton = document.getElementById("zoom-out");
+// Загружаем изображение и центрируем его при полной загрузке
+mapImage.addEventListener("load", function () {
+    mapWrap.scrollLeft = (mapImage.offsetWidth - mapWrap.offsetWidth) / 2;
+    mapWrap.scrollTop = (mapImage.offsetHeight - mapWrap.offsetHeight) / 2;
+});
+
+// Обработчик событий для перемещения изображения
+mapWrap.addEventListener("mousedown", function (e) {
+    e.preventDefault();
+    isScrolling = true;
+    startX = e.pageX - mapWrap.offsetLeft;
+    startY = e.pageY - mapWrap.offsetTop;
+    scrollLeft = mapWrap.scrollLeft;
+    scrollTop = mapWrap.scrollTop;
+});
+
+var isScrolling = false;
+mapWrap.addEventListener("mousemove", function (e) {
+    if (!isScrolling) return;
+    e.preventDefault();
+    var x = e.pageX - mapWrap.offsetLeft;
+    var y = e.pageY - mapWrap.offsetTop;
+    var walkX = (x - startX) * 1;
+    var walkY = (y - startY) * 1;
+    mapWrap.scrollLeft = scrollLeft - walkX;
+    mapWrap.scrollTop = scrollTop - walkY;
+});
+
+mapWrap.addEventListener("mouseup", function () {
+    isScrolling = false;
+});
+
+mapWrap.addEventListener("mouseleave", function () {
+    isScrolling = false;
+});
+
+// Обработчики событий для увеличения/уменьшения изображения
+
+zoomInButton.addEventListener("click", function () {
+    var currentWidth = mapImage.offsetWidth;
+    var currentHeight = mapImage.offsetHeight;
+    var newWidth = Math.min(currentWidth + 400, 1700);
+    var newHeight = Math.min(currentHeight + 400, 1700);
+    mapImage.style.width = newWidth + "px";
+    mapImage.style.height = newHeight + "px";
+    mapWrap.scrollLeft = (mapImage.offsetWidth - mapWrap.offsetWidth) / 2;
+    mapWrap.scrollTop = (mapImage.offsetHeight - mapWrap.offsetHeight) / 2;
+});
+
+zoomOutButton.addEventListener("click", function () {
+    var currentWidth = mapImage.offsetWidth;
+    var currentHeight = mapImage.offsetHeight;
+    var newWidth = Math.max(currentWidth - 400, 1000);
+    var newHeight = Math.max(currentHeight - 400, 1000);
+    mapImage.style.width = newWidth + "px";
+    mapImage.style.height = newHeight + "px";
+    mapWrap.scrollLeft = (mapImage.offsetWidth - mapWrap.offsetWidth) / 2;
+    mapWrap.scrollTop = (mapImage.offsetHeight - mapWrap.offsetHeight) / 2;
+});
+
+mapMark.style.width = mapImage.offsetWidth + "px";
+mapMark.style.height = mapImage.offsetHeight + "px";
+
+zoomInButton.addEventListener("click", function () {
+    if (mapMark.style.width != mapImage.offsetWidth) {
+        mapMark.style.width = mapImage.offsetWidth + "px";
+        mapMark.style.height = mapImage.offsetHeight + "px";
+    }
+});
+
+zoomOutButton.addEventListener("click", function () {
+    if (mapMark.style.width != mapImage.offsetWidth) {
+        mapMark.style.width = mapImage.offsetWidth + "px";
+        mapMark.style.height = mapImage.offsetHeight + "px";
+    }
+});
+
+const tooltip1 = document.getElementById("tooltip-1");
+
+function toggleMark1() {
+    if (tooltip1.style.display === "none") {
+        tooltip1.style.display = "block";
+    } else {
+        tooltip1.style.display = "none";
+    }
+};
