@@ -52,7 +52,7 @@
         position: absolute;
         width: 2%;
         height: 3%;
-        z-index: 10;
+        z-index: 1;
         cursor: pointer;
         img {
             width: 100%;
@@ -69,7 +69,7 @@
         height: auto;
         background-color: white;
         padding: 20px;
-        z-index: 20;
+        z-index: 1;
     }
     #tooltip-1 {
         top: 46.5%;
@@ -80,7 +80,7 @@
         position: absolute;
         display: flex;
         flex-direction: column;
-        z-index: 1;
+        z-index: 2;
         top: 50%;
         right: 10px;
         transform: translateY(-50%);
@@ -105,6 +105,7 @@
         border-radius: 8px;
         font-size: 15px;
         transition: 0.1s;
+        z-index: 2;
     }
     &__map-link:hover {
         color: rgb(0, 0, 0);
