@@ -106,6 +106,10 @@
         font-size: 15px;
         transition: 0.1s;
         z-index: 2;
+        svg{
+            width: 24px;
+            max-height: 24px;
+        }
     }
     &__map-link:hover {
         color: rgb(0, 0, 0);
@@ -206,6 +210,45 @@
         &__map {
             filter: drop-shadow(0px 1.111vw 1.111vw rgba(0, 0, 0, 0.25));
             border-radius: 5.556vw;
+            max-width: 100%;
+            max-height: 105.556vw;
+        }
+        &__map-wrap {
+            max-width: 100%;
+            max-height: 105.556vw;
+            background-size: 5.556vw;
+        }
+        &__map-image {
+            width: 1500px;
+            height: 1500px;
+        }
+        &__map-tooltip {
+            width: 55.556vw;
+            padding: 2.778vw;
+        }
+        &__map-button {
+            right: 2.778vw;
+            border-radius: 3.333vw;
+            box-shadow: 0 0 1.389vw rgb(195, 195, 195);
+            button {
+                padding: 2.778vw;
+            }
+        }
+        &__map-link {
+            left: 2.778vw;
+            bottom: 2.778vw;
+            column-gap: 2.778vw;
+            padding: 1.389vw;
+            box-shadow: 0 0 1.389vw rgb(202, 202, 202);
+            border-radius: 2.222vw;
+            font-size: 4.167vw;
+            svg{
+                width: 6.667vw;
+                max-height: 6.667vw;
+            }
+        }
+        &__map-link:hover {
+            box-shadow: 0 0 1.389vw rgb(165, 165, 165);
         }
 
         // .footer__info
